@@ -114,22 +114,11 @@
 /* Logo Center */
 .logoWrap {
   display: flex;
+  flex-direction: column;
   align-items: center;
   text-decoration: none;
   flex-shrink: 0;
-  gap: 12px;
-}
-
-.navbarLogoImg {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 45px;
-  height: 45px;
-}
-
-.navbarLogoImg img {
-  object-fit: contain;
+  position: relative;
 }
 
 .logoSvg {

@@ -130,15 +130,6 @@ export default function Navbar() {
 
           {/* Logo Center */}
           <Link href="/" className={styles.logoWrap} aria-label="Majesty Hotels - Home">
-            <div className={styles.navbarLogoImg}>
-              <Image 
-                src="/images/the_majesty_palace_logo.png" 
-                alt="Majesty Logo" 
-                width={40} 
-                height={40} 
-                style={{ filter: 'invert(1) hue-rotate(180deg) brightness(1.2)' }} 
-              />
-            </div>
             <div className={styles.logoText}>
               <span className={styles.logoMain}>MAJESTY</span>
               <span className={styles.logoSub}>HOTELS · RESORTS · PALACES</span>
@@ -201,13 +192,6 @@ export default function Navbar() {
         <div className={`${styles.mobileMenu} ${mobileMenuOpen ? styles.mobileMenuOpen : ''}`}>
           <div className={styles.mobileHeader}>
             <Link href="/" onClick={() => setMobileMenuOpen(false)} className={styles.mobileLogo}>
-              <Image 
-                src="/images/the_majesty_palace_logo.png" 
-                alt="Majesty Logo" 
-                width={32} 
-                height={32} 
-                style={{ filter: 'invert(1) hue-rotate(180deg) brightness(1.2)', marginRight: '10px' }}
-              />
               <span className={styles.mobileLogoMain}>MAJESTY</span>
               <span className={styles.mobileLogoSub}>HOTELS · RESORTS · PALACES</span>
             </Link>
