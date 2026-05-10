@@ -1,81 +1,88 @@
-import type { Metadata } from 'next';
+'use client';
 import Image from 'next/image';
 import Link from 'next/link';
 import styles from './page.module.css';
 
-export const metadata: Metadata = {
-  title: 'Early Bird | Aura Hotels',
-  description: 'The early bird catches the finest suites. Plan your travels well in advance to unlock our most lucrative savings and secure your preferred room types.',
-};
-
-export default function EarlyBirdPage() {
+export default function OffersPage() {
   return (
-    <>
+    <div className={styles.pageWrapper}>
       {/* Hero Section */}
       <section className={styles.hero}>
         <div className={styles.heroBg}>
           <Image
-            src="/images/special_offers_banner_1778416333572.png"
+            src="/images/hero_palace_hotel_1778416060429.png"
             alt="Early Bird"
             fill
             priority
             style={{ objectFit: 'cover' }}
-            sizes="100vw"
           />
-          <div className={styles.heroOverlay} />
+          <div className={styles.overlay} />
         </div>
         <div className={styles.heroContent}>
-          <span className={styles.eyebrow}>Discover</span>
-          <h1 className={styles.title}>Early Bird</h1>
+          <span className={styles.eyebrow}>Plan Ahead for Perfection</span>
           <div className={styles.goldLine} />
-          <p className={styles.desc}>Experience the finest collection of early bird curated for our discerning guests.</p>
-        </div>
-      </section>
-      
-      {/* Intro Section */}
-      <section className={styles.introSection}>
-        <div className={styles.introInner}>
-          <span className={styles.introEyebrow}>Overview</span>
-          <h2 className={styles.introTitle}>Plan Ahead & Save</h2>
-          <div className={styles.goldLineCenter} />
-          <p className={styles.introText}>
-            The early bird catches the finest suites. Plan your travels well in advance to unlock our most lucrative savings and secure your preferred room types.
-          </p>
+          <h1 className={styles.heroTitle}>Early Bird</h1>
         </div>
       </section>
 
-      {/* Grid Section */}
-      <section className={styles.gridSection}>
+      {/* Intro Section */}
+      <section className={styles.introSection}>
         <div className={styles.container}>
-          <div className={styles.grid}>
-            {[{"name":"Advance Purchase 60","location":"All Properties","desc":"Book 60 days in advance and enjoy up to 35% savings on our Best Available Rate.","price":"Valid all year","image":"/images/special_offers_banner_1778416333572.png"},{"name":"Advance Purchase 30","location":"All Properties","desc":"Book 30 days in advance and enjoy up to 20% savings on our Best Available Rate.","price":"Valid all year","image":"/images/hotel_lobby_grand_1778416389976.png"},{"name":"Early Bird Weddings","location":"Palaces & Resorts","desc":"Confirm your wedding venue 12 months prior for exclusive waivers on venue rentals.","price":"Valid all year","image":"/images/wedding_banquet_hall_1778416202576.png"}].map((item, idx) => (
-              <div key={idx} className={styles.card}>
-                <div className={styles.cardImgWrap}>
-                  <Image
-                    src={item.image}
-                    alt={item.name}
-                    fill
-                    style={{ objectFit: 'cover' }}
-                    sizes="(max-width: 768px) 100vw, 33vw"
-                  />
-                  <div className={styles.cardOverlay} />
-                  <span className={styles.cardLocation}>{item.location}</span>
-                </div>
-                <div className={styles.cardBody}>
-                  <h3 className={styles.cardTitle}>{item.name}</h3>
-                  <p className={styles.cardDesc}>{item.desc}</p>
-                  <div className={styles.cardFooter}>
-                    <span className={styles.cardPrice}>{item.price}</span>
-                    <Link href="/book" className={styles.cardBtn}>
-                      Explore
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            ))}
+          <p className={styles.introText}>Reward your foresight with our Early Bird offers. Book your stay in advance to enjoy exclusive savings and guaranteed availability at our most iconic destinations.</p>
+        </div>
+      </section>
+
+      {/* Main Content Sections */}
+      <section className={styles.contentSection}>
+        <div className={styles.container}>
+          <div className={styles.grid2}>
+            {/* Section 1 */}
+            <div className={styles.contentCard}>
+              <h2 className={styles.cardTitle}>Advanced Bookings</h2>
+              <div className={styles.goldLineSmall} />
+              <p className={styles.cardDesc}>Planning your holiday in advance has never been more rewarding. Secure your preferred dates at our most sought-after properties while enjoying significant savings on our best available rates.</p>
+            </div>
+            
+            {/* Section 2 */}
+            <div className={styles.contentCard}>
+              <h2 className={styles.cardTitle}>Peace of Mind</h2>
+              <div className={styles.goldLineSmall} />
+              <p className={styles.cardDesc}>Enjoy the confidence of having your travel plans perfectly arranged. With our Early Bird packages, you can relax and look forward to your journey, knowing that every detail of your Aura experience is already taken care of.</p>
+            </div>
           </div>
         </div>
       </section>
-    </>
+
+      {/* Features Banner */}
+      <section className={styles.featuresBanner}>
+        <div className={styles.container}>
+          <h2 className={styles.bannerTitle}>Inclusions</h2>
+          <div className={styles.goldLineCenter} />
+          <div className={styles.featuresGrid}>
+                        <div className={styles.featureItem}>
+              <h3 className={styles.featureTitle}>Up to 25% Off</h3>
+              <p className={styles.featureDesc}>Special savings on bookings made 30 days in advance.</p>
+            </div>            <div className={styles.featureItem}>
+              <h3 className={styles.featureTitle}>Flexible Dates</h3>
+              <p className={styles.featureDesc}>One-time date change option included.</p>
+            </div>            <div className={styles.featureItem}>
+              <h3 className={styles.featureTitle}>Early Check-in</h3>
+              <p className={styles.featureDesc}>Priority access to your room upon arrival.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className={styles.ctaSection}>
+        <div className={styles.ctaContent}>
+          <h2 className={styles.ctaTitle}>Experience Exceptional Value</h2>
+          <p className={styles.ctaDesc}>Take advantage of our exclusive offers and book your next Aura escape today.</p>
+          <div className={styles.ctaButtons}>
+            <Link href="/book" className={styles.btnPrimary}>View All Offers</Link>
+          </div>
+        </div>
+      </section>
+    </div>
   );
 }

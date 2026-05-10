@@ -1,16 +1,11 @@
-import type { Metadata } from 'next';
+'use client';
 import Image from 'next/image';
 import Link from 'next/link';
 import styles from './page.module.css';
 
-export const metadata: Metadata = {
-  title: 'Celebration Packages | Aura Hotels',
-  description: 'Whether it&apos;s the holiday season, a honeymoon, or a milestone birthday, our celebration packages are bundled with surprises to make your moments magical.',
-};
-
-export default function CelebrationPackagesPage() {
+export default function OffersPage() {
   return (
-    <>
+    <div className={styles.pageWrapper}>
       {/* Hero Section */}
       <section className={styles.hero}>
         <div className={styles.heroBg}>
@@ -20,62 +15,74 @@ export default function CelebrationPackagesPage() {
             fill
             priority
             style={{ objectFit: 'cover' }}
-            sizes="100vw"
           />
-          <div className={styles.heroOverlay} />
+          <div className={styles.overlay} />
         </div>
         <div className={styles.heroContent}>
-          <span className={styles.eyebrow}>Discover</span>
-          <h1 className={styles.title}>Celebration Packages</h1>
+          <span className={styles.eyebrow}>Moments to Cherish</span>
           <div className={styles.goldLine} />
-          <p className={styles.desc}>Experience the finest collection of celebration packages curated for our discerning guests.</p>
-        </div>
-      </section>
-      
-      {/* Intro Section */}
-      <section className={styles.introSection}>
-        <div className={styles.introInner}>
-          <span className={styles.introEyebrow}>Overview</span>
-          <h2 className={styles.introTitle}>Festive Joy</h2>
-          <div className={styles.goldLineCenter} />
-          <p className={styles.introText}>
-            Whether it's the holiday season, a honeymoon, or a milestone birthday, our celebration packages are bundled with surprises to make your moments magical.
-          </p>
+          <h1 className={styles.heroTitle}>Celebration Packages</h1>
         </div>
       </section>
 
-      {/* Grid Section */}
-      <section className={styles.gridSection}>
+      {/* Intro Section */}
+      <section className={styles.introSection}>
         <div className={styles.container}>
-          <div className={styles.grid}>
-            {[{"name":"Honeymoon Bliss","location":"Resorts & Palaces","desc":"Romantic room decor, a bottle of champagne, and a private dinner under the stars.","price":"Bespoke","image":"/images/luxury_suite_interior_1778416076439.png"},{"name":"Festive Gala","location":"All Properties","desc":"New Year and Christmas specials featuring grand gala dinners and live entertainment.","price":"Seasonal","image":"/images/wedding_banquet_hall_1778416202576.png"},{"name":"Anniversary Retreat","location":"All Properties","desc":"Complimentary cake, room upgrade subject to availability, and 20% off on spa services.","price":"Valid all year","image":"/images/heritage_palace_exterior_1778416158734.png"}].map((item, idx) => (
-              <div key={idx} className={styles.card}>
-                <div className={styles.cardImgWrap}>
-                  <Image
-                    src={item.image}
-                    alt={item.name}
-                    fill
-                    style={{ objectFit: 'cover' }}
-                    sizes="(max-width: 768px) 100vw, 33vw"
-                  />
-                  <div className={styles.cardOverlay} />
-                  <span className={styles.cardLocation}>{item.location}</span>
-                </div>
-                <div className={styles.cardBody}>
-                  <h3 className={styles.cardTitle}>{item.name}</h3>
-                  <p className={styles.cardDesc}>{item.desc}</p>
-                  <div className={styles.cardFooter}>
-                    <span className={styles.cardPrice}>{item.price}</span>
-                    <Link href="/book" className={styles.cardBtn}>
-                      Explore
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            ))}
+          <p className={styles.introText}>From fairytale weddings to milestone birthdays, celebrate life\'s most precious moments with the legendary hospitality of Aura Hotels. Our packages are designed to make every detail perfect.</p>
+        </div>
+      </section>
+
+      {/* Main Content Sections */}
+      <section className={styles.contentSection}>
+        <div className={styles.container}>
+          <div className={styles.grid2}>
+            {/* Section 1 */}
+            <div className={styles.contentCard}>
+              <h2 className={styles.cardTitle}>Legendary Weddings</h2>
+              <div className={styles.goldLineSmall} />
+              <p className={styles.cardDesc}>Step into a world of timeless romance with our wedding packages. Our expert planners will assist you in every detail, from the choice of venue and menu to the floral arrangements and entertainment, ensuring your special day is truly unforgettable.</p>
+            </div>
+            
+            {/* Section 2 */}
+            <div className={styles.contentCard}>
+              <h2 className={styles.cardTitle}>Milestone Events</h2>
+              <div className={styles.goldLineSmall} />
+              <p className={styles.cardDesc}>Celebrate your achievements and milestones with our customized event packages. From grand galas in our historic ballrooms to intimate gatherings in our private salons, we provide the perfect setting for your success.</p>
+            </div>
           </div>
         </div>
       </section>
-    </>
+
+      {/* Features Banner */}
+      <section className={styles.featuresBanner}>
+        <div className={styles.container}>
+          <h2 className={styles.bannerTitle}>Inclusions</h2>
+          <div className={styles.goldLineCenter} />
+          <div className={styles.featuresGrid}>
+                        <div className={styles.featureItem}>
+              <h3 className={styles.featureTitle}>Bridal Suite</h3>
+              <p className={styles.featureDesc}>Complimentary stay in our most romantic suites.</p>
+            </div>            <div className={styles.featureItem}>
+              <h3 className={styles.featureTitle}>Custom Menus</h3>
+              <p className={styles.featureDesc}>Bespoke culinary creations for your guests.</p>
+            </div>            <div className={styles.featureItem}>
+              <h3 className={styles.featureTitle}>Planning Services</h3>
+              <p className={styles.featureDesc}>Dedicated event concierge for every detail.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className={styles.ctaSection}>
+        <div className={styles.ctaContent}>
+          <h2 className={styles.ctaTitle}>Experience Exceptional Value</h2>
+          <p className={styles.ctaDesc}>Take advantage of our exclusive offers and book your next Aura escape today.</p>
+          <div className={styles.ctaButtons}>
+            <Link href="/book" className={styles.btnPrimary}>View All Offers</Link>
+          </div>
+        </div>
+      </section>
+    </div>
   );
 }

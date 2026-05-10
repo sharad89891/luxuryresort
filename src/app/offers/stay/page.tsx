@@ -1,81 +1,88 @@
-import type { Metadata } from 'next';
+'use client';
 import Image from 'next/image';
 import Link from 'next/link';
 import styles from './page.module.css';
 
-export const metadata: Metadata = {
-  title: 'Stay Offers | Aura Hotels',
-  description: 'Discover exclusive room packages and rates designed to make your stay even more rewarding. From long weekend escapes to suite upgrades, find the perfect offer.',
-};
-
-export default function StayOffersPage() {
+export default function OffersPage() {
   return (
-    <>
+    <div className={styles.pageWrapper}>
       {/* Hero Section */}
       <section className={styles.hero}>
         <div className={styles.heroBg}>
           <Image
-            src="/images/presidential_villa_1778416375029.png"
+            src="/images/luxury_suite_interior_1778416076439.png"
             alt="Stay Offers"
             fill
             priority
             style={{ objectFit: 'cover' }}
-            sizes="100vw"
           />
-          <div className={styles.heroOverlay} />
+          <div className={styles.overlay} />
         </div>
         <div className={styles.heroContent}>
-          <span className={styles.eyebrow}>Discover</span>
-          <h1 className={styles.title}>Stay Offers</h1>
+          <span className={styles.eyebrow}>The Luxury of Time</span>
           <div className={styles.goldLine} />
-          <p className={styles.desc}>Experience the finest collection of stay offers curated for our discerning guests.</p>
-        </div>
-      </section>
-      
-      {/* Intro Section */}
-      <section className={styles.introSection}>
-        <div className={styles.introInner}>
-          <span className={styles.introEyebrow}>Overview</span>
-          <h2 className={styles.introTitle}>Luxurious Getaways</h2>
-          <div className={styles.goldLineCenter} />
-          <p className={styles.introText}>
-            Discover exclusive room packages and rates designed to make your stay even more rewarding. From long weekend escapes to suite upgrades, find the perfect offer.
-          </p>
+          <h1 className={styles.heroTitle}>Stay Offers</h1>
         </div>
       </section>
 
-      {/* Grid Section */}
-      <section className={styles.gridSection}>
+      {/* Intro Section */}
+      <section className={styles.introSection}>
         <div className={styles.container}>
-          <div className={styles.grid}>
-            {[{"name":"Suite Dreams","location":"All Properties","desc":"Book a suite and enjoy complimentary airport transfers, lounge access, and a spa voucher.","price":"Valid all year","image":"/images/luxury_suite_interior_1778416076439.png"},{"name":"Stay A Little Longer","location":"Resorts","desc":"Stay for 4 nights and pay for 3. Includes complimentary daily breakfast.","price":"Valid till Nov","image":"/images/beach_resort_view_1778416217181.png"},{"name":"Business Travel Rate","location":"City Hotels","desc":"Special rates for corporate travellers including high-speed Wi-Fi and express laundry.","price":"Valid all year","image":"/images/hotel_lobby_grand_1778416389976.png"}].map((item, idx) => (
-              <div key={idx} className={styles.card}>
-                <div className={styles.cardImgWrap}>
-                  <Image
-                    src={item.image}
-                    alt={item.name}
-                    fill
-                    style={{ objectFit: 'cover' }}
-                    sizes="(max-width: 768px) 100vw, 33vw"
-                  />
-                  <div className={styles.cardOverlay} />
-                  <span className={styles.cardLocation}>{item.location}</span>
-                </div>
-                <div className={styles.cardBody}>
-                  <h3 className={styles.cardTitle}>{item.name}</h3>
-                  <p className={styles.cardDesc}>{item.desc}</p>
-                  <div className={styles.cardFooter}>
-                    <span className={styles.cardPrice}>{item.price}</span>
-                    <Link href="/book" className={styles.cardBtn}>
-                      Explore
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            ))}
+          <p className={styles.introText}>Extended stays, suite upgrades, and family escapes. Explore our range of stay-focused offers designed to provide the perfect backdrop for your memories.</p>
+        </div>
+      </section>
+
+      {/* Main Content Sections */}
+      <section className={styles.contentSection}>
+        <div className={styles.container}>
+          <div className={styles.grid2}>
+            {/* Section 1 */}
+            <div className={styles.contentCard}>
+              <h2 className={styles.cardTitle}>Suite Surprises</h2>
+              <div className={styles.goldLineSmall} />
+              <p className={styles.cardDesc}>Experience our most opulent accommodations with our Suite Upgrade offers. Enjoy the space and elegance of our legendary suites with exclusive benefits like 24-hour butler service, private check-in, and access to executive lounges.</p>
+            </div>
+            
+            {/* Section 2 */}
+            <div className={styles.contentCard}>
+              <h2 className={styles.cardTitle}>Family Getaways</h2>
+              <div className={styles.goldLineSmall} />
+              <p className={styles.cardDesc}>Create lasting bonds with our curated family packages. From kids activities and special menus to extra rooms and babysitting services, we ensure every member of the family has a truly magical stay.</p>
+            </div>
           </div>
         </div>
       </section>
-    </>
+
+      {/* Features Banner */}
+      <section className={styles.featuresBanner}>
+        <div className={styles.container}>
+          <h2 className={styles.bannerTitle}>Inclusions</h2>
+          <div className={styles.goldLineCenter} />
+          <div className={styles.featuresGrid}>
+                        <div className={styles.featureItem}>
+              <h3 className={styles.featureTitle}>Stay 3, Pay 2</h3>
+              <p className={styles.featureDesc}>One complimentary night on every three-night stay.</p>
+            </div>            <div className={styles.featureItem}>
+              <h3 className={styles.featureTitle}>Suite Upgrade</h3>
+              <p className={styles.featureDesc}>Upgrade to the next category of luxury.</p>
+            </div>            <div className={styles.featureItem}>
+              <h3 className={styles.featureTitle}>Royal Welcome</h3>
+              <p className={styles.featureDesc}>In-room amenities and private airport transfers.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className={styles.ctaSection}>
+        <div className={styles.ctaContent}>
+          <h2 className={styles.ctaTitle}>Experience Exceptional Value</h2>
+          <p className={styles.ctaDesc}>Take advantage of our exclusive offers and book your next Aura escape today.</p>
+          <div className={styles.ctaButtons}>
+            <Link href="/book" className={styles.btnPrimary}>View All Offers</Link>
+          </div>
+        </div>
+      </section>
+    </div>
   );
 }

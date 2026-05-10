@@ -1,97 +1,224 @@
+.pageWrapper {
+  background: #FAF6F0;
+  min-height: 100vh;
+}
+
 .hero {
-  position: relative; height: 55vh; min-height: 420px;
-  display: flex; align-items: flex-end; padding-bottom: 80px; overflow: hidden;
+  position: relative;
+  height: 70vh;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
-.heroBg { position: absolute; inset: 0; }
-.heroOverlay {
-  position: absolute; inset: 0;
-  background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.2) 60%, rgba(0,0,0,0.4) 100%);
+
+.heroBg {
+  position: absolute;
+  inset: 0;
 }
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.6));
+}
+
 .heroContent {
-  position: relative; z-index: 2;
-  max-width: 1400px; margin: 0 auto; padding: 0 80px; width: 100%;
+  position: relative;
+  z-index: 2;
+  padding: 0 24px;
+  max-width: 800px;
 }
+
 .eyebrow {
-  display: block; font-family: 'Montserrat', sans-serif; font-size: 11px;
-  font-weight: 600; letter-spacing: 3px; text-transform: uppercase;
-  color: #C9A96E; margin-bottom: 8px;
+  display: block;
+  color: #C9A96E;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
 }
+
+.goldLine {
+  width: 60px;
+  height: 1px;
+  background: #8E744B;
+  margin: 0 auto 24px;
+}
+
 .heroTitle {
+  color: white;
   font-family: 'Cormorant Garamond', serif;
-  font-size: clamp(40px, 6vw, 72px); font-weight: 400; color: white;
+  font-size: clamp(40px, 6vw, 72px);
+  font-weight: 400;
+  line-height: 1.1;
+  text-shadow: 0 4px 20px rgba(0,0,0,0.3);
 }
-.goldLine { width: 50px; height: 1px; background: #8E744B; margin: 16px 0; }
-.heroDesc {
-  font-family: 'Montserrat', sans-serif; font-size: 14px; font-weight: 300;
-  color: rgba(255,255,255,0.8); line-height: 1.7; max-width: 500px;
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 24px;
 }
-/* Offers */
-.offersSection { padding: 80px 0; background: #FAF6F0; }
-.container { max-width: 1400px; margin: 0 auto; padding: 0 40px; }
-.grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
-.card {
-  background: white; overflow: hidden;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.07);
-  transition: all 0.4s ease;
+
+.introSection {
+  padding: 100px 0 60px;
+  text-align: center;
 }
-.card:hover { transform: translateY(-6px); box-shadow: 0 20px 50px rgba(0,0,0,0.12); }
-.cardImage { position: relative; height: 240px; overflow: hidden; }
-.cardImage :global(img) { transition: transform 0.7s ease; }
-.card:hover .cardImage :global(img) { transform: scale(1.05); }
-.cardImageOverlay {
-  position: absolute; inset: 0;
-  background: linear-gradient(to top, rgba(0,0,0,0.35) 0%, transparent 60%);
+
+.introText {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(24px, 3vw, 36px);
+  color: #1A1A1A;
+  max-width: 900px;
+  margin: 0 auto;
+  line-height: 1.4;
 }
-.badge {
-  position: absolute; top: 16px; right: 16px; z-index: 1;
-  background: #8E744B; color: white;
-  font-family: 'Montserrat', sans-serif; font-size: 9px; font-weight: 700;
-  letter-spacing: 1.5px; text-transform: uppercase; padding: 6px 14px;
+
+.contentSection {
+  padding: 40px 0 100px;
 }
-.categoryTag {
-  position: absolute; bottom: 16px; left: 16px; z-index: 1;
-  background: rgba(255,255,255,0.9); color: #1A1A1A;
-  font-family: 'Montserrat', sans-serif; font-size: 9px; font-weight: 700;
-  letter-spacing: 2px; text-transform: uppercase; padding: 5px 12px;
+
+.grid2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
 }
-.cardBody { padding: 28px; }
+
+.contentCard {
+  background: white;
+  padding: 60px 40px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.05);
+  transition: transform 0.4s ease;
+}
+
+.contentCard:hover {
+  transform: translateY(-5px);
+}
+
 .cardTitle {
-  font-family: 'Cormorant Garamond', serif; font-size: 24px;
-  font-weight: 500; color: #1A1A1A; margin-bottom: 6px;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 32px;
+  color: #1A1A1A;
+  margin-bottom: 20px;
 }
-.cardValidity {
-  font-family: 'Montserrat', sans-serif; font-size: 10px; font-weight: 500;
-  letter-spacing: 1px; text-transform: uppercase; color: #8E744B; margin-bottom: 12px;
+
+.goldLineSmall {
+  width: 40px;
+  height: 1px;
+  background: #8E744B;
+  margin-bottom: 24px;
 }
+
 .cardDesc {
-  font-family: 'Montserrat', sans-serif; font-size: 12px; font-weight: 300;
-  color: #4A4A4A; line-height: 1.7; margin-bottom: 16px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  line-height: 1.8;
+  color: #4A4A4A;
 }
-.highlights { list-style: none; display: flex; flex-direction: column; gap: 6px; margin-bottom: 24px; }
-.highlight {
-  font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 400;
-  color: #2D2D2D; display: flex; gap: 8px; align-items: center;
+
+.featuresBanner {
+  background: #1A1A1A;
+  padding: 100px 0;
+  color: white;
+  text-align: center;
 }
-.tick { color: #8E744B; font-size: 12px; flex-shrink: 0; }
-.cardBtn {
-  display: inline-block; background: #8E744B; color: white;
-  font-family: 'Montserrat', sans-serif; font-size: 10px; font-weight: 700;
-  letter-spacing: 2px; text-transform: uppercase; padding: 12px 28px;
-  transition: background 0.3s ease; width: 100%; text-align: center;
+
+.bannerTitle {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 48px;
+  margin-bottom: 24px;
 }
-.cardBtn:hover { background: #6B5535; }
-/* Terms */
-.terms { padding: 24px 0; background: #FAF6F0; }
-.termsText {
-  font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 300;
-  color: #888; line-height: 1.6;
+
+.goldLineCenter {
+  width: 60px;
+  height: 1px;
+  background: #8E744B;
+  margin: 0 auto 60px;
 }
-.termsLink { color: #8E744B; text-decoration: underline; }
-/* Responsive */
-@media (max-width: 1100px) { .grid { grid-template-columns: repeat(2, 1fr); } }
+
+.featuresGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.featureItem {
+  padding: 0 20px;
+}
+
+.featureTitle {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #C9A96E;
+  margin-bottom: 16px;
+}
+
+.featureDesc {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: rgba(255,255,255,0.7);
+}
+
+.ctaSection {
+  padding: 120px 24px;
+  background: #FAF6F0;
+  text-align: center;
+}
+
+.ctaTitle {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 48px;
+  color: #1A1A1A;
+  margin-bottom: 16px;
+}
+
+.ctaDesc {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  color: #4A4A4A;
+  margin-bottom: 40px;
+}
+
+.btnPrimary {
+  display: inline-block;
+  background: #8E744B;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 16px 40px;
+  border: 1px solid #8E744B;
+  transition: all 0.3s ease;
+}
+
+.btnPrimary:hover {
+  background: #6B5535;
+  border-color: #6B5535;
+}
+
+@media (max-width: 900px) {
+  .grid2 {
+    grid-template-columns: 1fr;
+  }
+  .featuresGrid {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+}
+
 @media (max-width: 768px) {
-  .heroContent { padding: 0 24px; }
-  .container { padding: 0 16px; }
-  .grid { grid-template-columns: 1fr; gap: 16px; }
+  .introSection { padding: 80px 0 40px; }
+  .contentCard { padding: 40px 24px; }
+  .featuresBanner { padding: 80px 0; }
+  .ctaSection { padding: 80px 24px; }
 }
-@media (max-width: 480px) { .heroContent { padding: 0 16px; } }
