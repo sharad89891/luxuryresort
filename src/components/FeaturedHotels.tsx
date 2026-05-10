@@ -5,13 +5,13 @@ import styles from './FeaturedHotels.module.css';
 
 const hotels = [
   {
-    id: 'aura-mahal-palace',
-    name: 'The Aura Mahal Palace',
+    id: 'the-majesty-palace',
+    name: 'The Majesty Palace',
     location: 'Mumbai',
     image: '/images/hotel_lobby_grand_1778416389976.png',
     tag: 'Icon',
     desc: 'An icon of Mumbai waterfront since 1903',
-    href: '/hotels/aura-mahal-palace',
+    href: '/hotels/the-majesty-palace',
   },
   {
     id: 'rambagh-palace',

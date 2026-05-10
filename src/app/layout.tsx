@@ -6,7 +6,7 @@ import Footer from "@/components/Footer";
 export const metadata: Metadata = {
   title: "Aura Hotels - Soulful Luxury Since 1903",
   description: "Experience the legendary hospitality of Aura Hotels. Discover our iconic palaces, resorts, and city hotels across India and beyond. Book your luxury stay today.",
-  keywords: "Aura Hotels, luxury hotels India, palace hotels, Aura Mahal Palace, luxury resorts, fine dining, spa wellness",
+  keywords: "Aura Hotels, luxury hotels India, palace hotels, The Majesty Palace, luxury resorts, fine dining, spa wellness",
   openGraph: {
     title: "Aura Hotels - Soulful Luxury Since 1903",
     description: "Experience the legendary hospitality of Aura Hotels.",

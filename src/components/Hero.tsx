@@ -9,10 +9,10 @@ const slides = [
     id: 'slide-hero',
     image: '/images/hero_palace_hotel_1778416060429.png',
     eyebrow: 'Iconic Landmark Since 1903',
-    title: 'The Aura Mahal Palace',
+    title: 'The Majesty Palace',
     subtitle: 'Mumbai',
     description: 'Where history meets unparalleled luxury on the shores of the Arabian Sea',
-    ctaPrimary: { label: 'Explore', href: '/hotels/aura-mahal-palace' },
+    ctaPrimary: { label: 'Explore', href: '/hotels/the-majesty-palace' },
     ctaSecondary: { label: 'Book Now', href: '/book' },
   },
   {

@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 const properties = [
   {
     id: 'aura-mahal-palace',
-    name: 'The Aura Mahal Palace',
+    name: 'The Majesty Palace',
     location: 'Mumbai, Maharashtra',
     category: 'Icon',
     rating: 5,

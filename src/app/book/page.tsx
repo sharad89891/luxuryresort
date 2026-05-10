@@ -61,7 +61,7 @@ export default function BookPage() {
               >
                 <option value="">Where to next?</option>
                 <optgroup label="Palaces">
-                  <option value="aura-mahal-mumbai">The Aura Mahal Palace, Mumbai</option>
+                  <option value="aura-mahal-mumbai">The Majesty Palace, Mumbai</option>
                   <option value="rambagh-jaipur">Rambagh Palace, Jaipur</option>
                   <option value="aura-lake-udaipur">Aura Lake Palace, Udaipur</option>
                 </optgroup>
