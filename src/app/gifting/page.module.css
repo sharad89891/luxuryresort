@@ -1,0 +1,76 @@
+.hero {
+  position: relative; height: 55vh; min-height: 420px;
+  display: flex; align-items: flex-end; padding-bottom: 80px; overflow: hidden;
+}
+.heroBg { position: absolute; inset: 0; }
+.heroOverlay {
+  position: absolute; inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.2) 60%, rgba(0,0,0,0.4) 100%);
+}
+.heroContent {
+  position: relative; z-index: 2;
+  max-width: 1400px; margin: 0 auto; padding: 0 80px; width: 100%;
+}
+.eyebrow {
+  display: block; font-family: 'Montserrat', sans-serif; font-size: 11px;
+  font-weight: 600; letter-spacing: 3px; text-transform: uppercase; color: #C9A96E; margin-bottom: 8px;
+}
+.heroTitle {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(40px, 6vw, 72px); font-weight: 400; color: white;
+}
+.goldLine { width: 50px; height: 1px; background: #8E744B; margin: 16px 0; }
+.heroDesc {
+  font-family: 'Montserrat', sans-serif; font-size: 14px; font-weight: 300;
+  color: rgba(255,255,255,0.8); line-height: 1.7; max-width: 500px;
+}
+.content { padding: 80px 0; background: #FAF6F0; }
+.container { max-width: 1400px; margin: 0 auto; padding: 0 40px; }
+.grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
+.card {
+  background: linear-gradient(135deg, #1A1A1A 0%, #2D2420 100%);
+  border: 1px solid rgba(142,116,75,0.4); overflow: hidden;
+  transition: all 0.4s ease; box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+}
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+  border-color: rgba(142,116,75,0.7);
+}
+.cardTop {
+  background: rgba(142,116,75,0.15);
+  border-bottom: 1px solid rgba(142,116,75,0.3);
+  padding: 20px 24px;
+  display: flex; flex-direction: column; gap: 2px;
+}
+.logoSmall {
+  font-family: 'Cormorant Garamond', serif; font-size: 20px;
+  font-weight: 600; letter-spacing: 6px; color: #C9A96E; text-indent: 6px;
+}
+.logoSubSmall {
+  font-family: 'Montserrat', sans-serif; font-size: 7px;
+  letter-spacing: 2px; color: rgba(201,169,110,0.6); text-transform: uppercase;
+}
+.cardBody { padding: 28px; }
+.amount {
+  display: block; font-family: 'Cormorant Garamond', serif;
+  font-size: 36px; font-weight: 400; color: white; margin-bottom: 12px;
+}
+.cardDesc {
+  font-family: 'Montserrat', sans-serif; font-size: 12px; font-weight: 300;
+  color: rgba(255,255,255,0.6); line-height: 1.6; margin-bottom: 24px;
+}
+.buyBtn {
+  display: block; text-align: center; background: #8E744B; color: white;
+  font-family: 'Montserrat', sans-serif; font-size: 10px; font-weight: 700;
+  letter-spacing: 2px; text-transform: uppercase; padding: 12px 24px;
+  transition: background 0.3s ease;
+}
+.buyBtn:hover { background: #6B5535; }
+@media (max-width: 1100px) { .grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 768px) {
+  .heroContent { padding: 0 24px; }
+  .container { padding: 0 16px; }
+  .grid { grid-template-columns: 1fr; gap: 16px; }
+}
+@media (max-width: 480px) { .heroContent { padding: 0 16px; } }

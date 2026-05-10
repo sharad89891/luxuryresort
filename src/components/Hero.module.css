@@ -1,0 +1,352 @@
+.hero {
+  position: relative;
+  height: 100vh;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.heroBg {
+  position: absolute;
+  inset: 0;
+  transition: opacity 0.6s ease;
+}
+
+.transitioning {
+  opacity: 0;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(0,0,0,0.65) 0%,
+    rgba(0,0,0,0.3) 50%,
+    rgba(0,0,0,0.5) 100%
+  );
+}
+
+/* Hero Content */
+.heroContent {
+  position: relative;
+  z-index: 2;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 80px;
+  width: 100%;
+  padding-bottom: 140px;
+}
+
+.contentIn {
+  animation: contentReveal 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+.contentOut {
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+@keyframes contentReveal {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.heroText {
+  max-width: 580px;
+}
+
+.eyebrow {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #C9A96E;
+  display: block;
+}
+
+.goldLine {
+  width: 50px;
+  height: 1px;
+  background: #8E744B;
+  margin: 16px 0;
+}
+
+.heroTitle {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(42px, 6vw, 76px);
+  font-weight: 400;
+  color: white;
+  line-height: 1.05;
+  margin-bottom: 8px;
+}
+
+.heroLocation {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(20px, 2.5vw, 28px);
+  font-weight: 300;
+  font-style: italic;
+  color: #C9A96E;
+  margin-bottom: 20px;
+}
+
+.heroDesc {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: rgba(255,255,255,0.8);
+  letter-spacing: 0.5px;
+  line-height: 1.8;
+  margin-bottom: 36px;
+  max-width: 460px;
+}
+
+.heroCta {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.ctaPrimary {
+  display: inline-block;
+  background: #8E744B;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  padding: 16px 40px;
+  transition: all 0.3s ease;
+  border: 1px solid #8E744B;
+}
+
+.ctaPrimary:hover {
+  background: #6B5535;
+  border-color: #6B5535;
+  transform: translateY(-2px);
+}
+
+.ctaSecondary {
+  display: inline-block;
+  background: transparent;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  padding: 16px 40px;
+  border: 1px solid rgba(255,255,255,0.6);
+  transition: all 0.3s ease;
+}
+
+.ctaSecondary:hover {
+  background: white;
+  color: #1A1A1A;
+  border-color: white;
+}
+
+/* Slide Indicators */
+.indicators {
+  position: absolute;
+  bottom: 140px;
+  right: 80px;
+  display: flex;
+  gap: 10px;
+  z-index: 3;
+}
+
+.indicator {
+  width: 24px;
+  height: 2px;
+  background: rgba(255,255,255,0.4);
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 0;
+}
+
+.indicatorActive {
+  background: #C9A96E;
+  width: 48px;
+}
+
+/* Scroll Prompt */
+.scrollPrompt {
+  position: absolute;
+  bottom: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  z-index: 3;
+}
+
+.scrollLine {
+  width: 1px;
+  height: 40px;
+  background: linear-gradient(to bottom, transparent, rgba(255,255,255,0.6));
+  animation: scrollPulse 2s ease-in-out infinite;
+}
+
+@keyframes scrollPulse {
+  0%, 100% { opacity: 0.4; transform: scaleY(0.8); }
+  50% { opacity: 1; transform: scaleY(1); }
+}
+
+.scrollLabel {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 9px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.5);
+}
+
+/* Quick Book Bar */
+.quickBook {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 4;
+  background: rgba(20, 20, 20, 0.92);
+  backdrop-filter: blur(10px);
+  border-top: 1px solid rgba(142, 116, 75, 0.4);
+}
+
+.quickBookInner {
+  display: flex;
+  align-items: stretch;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.quickBookField {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 16px 20px;
+  border-right: 1px solid rgba(255,255,255,0.08);
+}
+
+.quickBookField label {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #8E744B;
+}
+
+.quickBookField input,
+.quickBookField select {
+  background: transparent;
+  border: none;
+  outline: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  font-weight: 300;
+  color: white;
+  padding: 0;
+  cursor: pointer;
+  color-scheme: dark;
+}
+
+.quickBookField input::placeholder {
+  color: rgba(255,255,255,0.4);
+  font-size: 13px;
+}
+
+.quickBookField select option {
+  background: #1A1A1A;
+}
+
+.quickBookBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #8E744B;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 0 36px;
+  white-space: nowrap;
+  transition: background 0.3s ease;
+  flex-shrink: 0;
+}
+
+.quickBookBtn:hover {
+  background: #6B5535;
+}
+
+/* Responsive */
+@media (max-width: 1100px) {
+  .heroContent { padding: 0 48px 160px; }
+  .indicators { right: 48px; bottom: 160px; }
+}
+
+@media (max-width: 768px) {
+  .hero { 
+    height: auto; 
+    min-height: 100svh; 
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: stretch;
+  }
+  
+  .heroContent {
+    padding: 140px 24px 60px;
+    align-self: flex-start;
+  }
+  
+  .heroTitle { font-size: 38px; }
+  
+  .heroCta { flex-direction: column; align-items: flex-start; }
+  
+  .ctaPrimary, .ctaSecondary {
+    padding: 14px 32px;
+    font-size: 10px;
+  }
+  
+  .indicators {
+    right: 24px;
+    bottom: 250px;
+  }
+  
+  .scrollPrompt { display: none; }
+  
+  .quickBook { position: relative; }
+  
+  .quickBookInner {
+    flex-direction: column;
+    padding: 0;
+  }
+  
+  .quickBookField {
+    border-right: none;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+    padding: 14px 20px;
+  }
+  
+  .quickBookBtn {
+    padding: 16px 24px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .heroContent { padding: 120px 16px 40px; }
+  .heroTitle { font-size: 30px; }
+  .heroDesc { font-size: 13px; }
+}
