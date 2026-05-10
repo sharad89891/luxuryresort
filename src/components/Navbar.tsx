@@ -134,9 +134,9 @@ export default function Navbar() {
               <Image 
                 src="/images/the_majesty_palace_logo.png" 
                 alt="Majesty Logo" 
-                width={35} 
-                height={35} 
-                style={{ filter: 'brightness(0) invert(1)' }} /* Make it white to match navbar */
+                width={40} 
+                height={40} 
+                style={{ filter: 'invert(1) hue-rotate(180deg) brightness(1.2)' }} 
               />
             </div>
             <div className={styles.logoText}>
@@ -204,9 +204,9 @@ export default function Navbar() {
               <Image 
                 src="/images/the_majesty_palace_logo.png" 
                 alt="Majesty Logo" 
-                width={28} 
-                height={28} 
-                style={{ filter: 'brightness(0) invert(1)', marginRight: '10px' }}
+                width={32} 
+                height={32} 
+                style={{ filter: 'invert(1) hue-rotate(180deg) brightness(1.2)', marginRight: '10px' }}
               />
               <span className={styles.mobileLogoMain}>MAJESTY</span>
               <span className={styles.mobileLogoSub}>HOTELS · RESORTS · PALACES</span>
