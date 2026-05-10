@@ -4,8 +4,8 @@ import Link from 'next/link';
 import styles from './page.module.css';
 
 export const metadata: Metadata = {
-  title: 'Our Story | Aura Hotels',
-  description: 'For over a century, Aura Hotels has defined the art of luxury hospitality. From building India&apos;s first luxury hotel to restoring historic palaces, our legacy is built on the foundation of soulful, heartfelt service.',
+  title: 'Our Story | Majesty Hotels',
+  description: 'For over a century, Majesty Hotels has defined the art of luxury hospitality. From building India&apos;s first luxury hotel to restoring historic palaces, our legacy is built on the foundation of soulful, heartfelt service.',
 };
 
 export default function OurStoryPage() {
@@ -39,7 +39,7 @@ export default function OurStoryPage() {
           <h2 className={styles.introTitle}>Soulful Luxury Since 1903</h2>
           <div className={styles.goldLineCenter} />
           <p className={styles.introText}>
-            For over a century, Aura Hotels has defined the art of luxury hospitality. From building India's first luxury hotel to restoring historic palaces, our legacy is built on the foundation of soulful, heartfelt service.
+            For over a century, Majesty Hotels has defined the art of luxury hospitality. From building India's first luxury hotel to restoring historic palaces, our legacy is built on the foundation of soulful, heartfelt service.
           </p>
         </div>
       </section>

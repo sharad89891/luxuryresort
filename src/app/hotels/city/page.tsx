@@ -4,7 +4,7 @@ import Link from 'next/link';
 import styles from './page.module.css';
 
 export const metadata: Metadata = {
-  title: 'City Hotels | Aura Hotels',
+  title: 'City Hotels | Majesty Hotels',
   description: 'Located in the beating heart of global metropolises, our city hotels are tranquil havens designed for the modern luxury traveller. Offering seamless connectivity, award-winning dining, and unparalleled service, they are the perfect base for business or leisure.',
 };
 
@@ -45,7 +45,7 @@ export default function CityHotelsPage() {
       {/* Featured Properties Section */}
       <section className={styles.featuredSection}>
         <div className={styles.container}>
-          {[{"name":"Aura Palace","location":"New Delhi","desc":"Set in six acres of lush gardens in the heart of India's diplomatic enclave. The hotel is a legendary destination known for hosting heads of state, featuring the capital's finest dining and the expansive J Wellness Circle.","image":"/images/presidential_villa_1778416375029.png","highlights":["Diplomatic Enclave","Michelin-star Dining","Executive Lounge"]},{"name":"Aura Lands End","location":"Mumbai","desc":"Perched on the edge of the Bandra peninsula, overlooking the Arabian Sea and the iconic Sea Link. The ultimate city retreat offering resort-style luxury in the heart of the entertainment district.","image":"/images/infinity_pool_view_1778416175800.png","highlights":["Sea Views","Grand Ballroom","Rooftop Bar"]}].map((feat: any, idx: number) => (
+          {[{"name":"Majesty Palace","location":"New Delhi","desc":"Set in six acres of lush gardens in the heart of India's diplomatic enclave. The hotel is a legendary destination known for hosting heads of state, featuring the capital's finest dining and the expansive J Wellness Circle.","image":"/images/presidential_villa_1778416375029.png","highlights":["Diplomatic Enclave","Michelin-star Dining","Executive Lounge"]},{"name":"Aura Lands End","location":"Mumbai","desc":"Perched on the edge of the Bandra peninsula, overlooking the Arabian Sea and the iconic Sea Link. The ultimate city retreat offering resort-style luxury in the heart of the entertainment district.","image":"/images/infinity_pool_view_1778416175800.png","highlights":["Sea Views","Grand Ballroom","Rooftop Bar"]}].map((feat: any, idx: number) => (
             <div key={idx} className={styles.featuredRow}>
               <div className={styles.featImgWrap}>
                 <Image
@@ -125,7 +125,7 @@ export default function CityHotelsPage() {
         <div className={styles.ctaOverlay} />
         <div className={styles.ctaContent}>
           <h2 className={styles.ctaTitle}>Ready to Experience Aura?</h2>
-          <p className={styles.ctaDesc}>Join Aura Circle for exclusive rates, or book your next extraordinary escape today.</p>
+          <p className={styles.ctaDesc}>Join Majesty Circle for exclusive rates, or book your next extraordinary escape today.</p>
           <Link href="/book" className={styles.ctaBtn}>
             Book Now
           </Link>

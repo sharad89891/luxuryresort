@@ -4,7 +4,7 @@ import Link from 'next/link';
 import styles from './page.module.css';
 
 export const metadata: Metadata = {
-  title: 'Careers | Aura Hotels',
+  title: 'Careers | Majesty Hotels',
   description: 'Our people are our greatest asset. Build a rewarding career with a brand that champions continuous learning, diversity, and the art of soulful service.',
 };
 

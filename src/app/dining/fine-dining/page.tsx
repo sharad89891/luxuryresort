@@ -4,7 +4,7 @@ import Link from 'next/link';
 import styles from './page.module.css';
 
 export const metadata: Metadata = {
-  title: 'Fine Dining | Aura Hotels Dining',
+  title: 'Fine Dining | Majesty Hotels Dining',
   description: 'Our fine dining establishments are true temples of gastronomy. Led by Michelin-starred chefs and global culinary maestros, we present menus that are as visually stunning as they are delicious. From the sourcing of the rarest ingredients to the theatrical tableside service, every element is designed to elevate your dining experience to an unforgettable art form.',
 };
 
@@ -45,7 +45,7 @@ export default function FineDiningPage() {
       {/* Featured Dining Section */}
       <section className={styles.featuredSection}>
         <div className={styles.container}>
-          {[{"name":"Wasabi by Morimoto","location":"The Majesty Palace, Mumbai","desc":"A premier Japanese restaurant crafted by the legendary Iron Chef Masaharu Morimoto. Featuring ingredients flown in daily from Tsukiji market, Wasabi offers contemporary Japanese cuisine with an unparalleled view of the Gateway of India.","image":"/images/fine_dining_restaurant_1778416112215.png","highlights":["Omakase Tasting Menus","Sushi Bar & Teppanyaki","Award-Winning Sake Menu"]},{"name":"Varq","location":"Aura Palace, New Delhi","desc":"Varq seamlessly blends traditional Indian flavors with contemporary plating and modern cooking techniques. The restaurant takes its name from the edible gold and silver foil used in royal Indian cuisine, reflecting the opulence of the dining experience.","image":"/images/gourmet_cuisine_dish_1778416264157.png","highlights":["Modern Indian Cuisine","Bespoke Art Installations","Curated Tea Pairings"]}].map((feat: any, idx: number) => (
+          {[{"name":"Wasabi by Morimoto","location":"The Majesty Palace, Mumbai","desc":"A premier Japanese restaurant crafted by the legendary Iron Chef Masaharu Morimoto. Featuring ingredients flown in daily from Tsukiji market, Wasabi offers contemporary Japanese cuisine with an unparalleled view of the Gateway of India.","image":"/images/fine_dining_restaurant_1778416112215.png","highlights":["Omakase Tasting Menus","Sushi Bar & Teppanyaki","Award-Winning Sake Menu"]},{"name":"Varq","location":"Majesty Palace, New Delhi","desc":"Varq seamlessly blends traditional Indian flavors with contemporary plating and modern cooking techniques. The restaurant takes its name from the edible gold and silver foil used in royal Indian cuisine, reflecting the opulence of the dining experience.","image":"/images/gourmet_cuisine_dish_1778416264157.png","highlights":["Modern Indian Cuisine","Bespoke Art Installations","Curated Tea Pairings"]}].map((feat: any, idx: number) => (
             <div key={idx} className={styles.featuredRow}>
               <div className={styles.featImgWrap}>
                 <Image

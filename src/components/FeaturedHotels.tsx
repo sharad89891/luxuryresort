@@ -7,6 +7,7 @@ const hotels = [
   {
     id: 'the-majesty-palace',
     name: 'The Majesty Palace',
+    logo: '/images/the_majesty_palace_logo.png',
     location: 'Mumbai',
     image: '/images/hotel_lobby_grand_1778416389976.png',
     tag: 'Icon',
@@ -24,7 +25,7 @@ const hotels = [
   },
   {
     id: 'aura-exotica',
-    name: 'Aura Exotica Resort & Spa',
+    name: 'Majesty Exotica Resort & Spa',
     location: 'Goa',
     image: '/images/beach_resort_view_1778416217181.png',
     tag: 'Resort',
@@ -33,7 +34,7 @@ const hotels = [
   },
   {
     id: 'aura-lake-palace',
-    name: 'Aura Lake Palace',
+    name: 'Majesty Lake Palace',
     location: 'Udaipur',
     image: '/images/infinity_pool_view_1778416175800.png',
     tag: 'Palace',
@@ -74,7 +75,14 @@ export default function FeaturedHotels() {
               </div>
               <div className={styles.cardBody}>
                 <p className={styles.cardLocation}>{hotel.location}</p>
-                <h3 className={styles.cardName}>{hotel.name}</h3>
+                <div className={styles.cardHeader}>
+                  <h3 className={styles.cardName}>{hotel.name}</h3>
+                  {hotel.logo && (
+                    <div className={styles.hotelLogo}>
+                      <Image src={hotel.logo} alt="Hotel Logo" width={24} height={24} />
+                    </div>
+                  )}
+                </div>
                 <p className={styles.cardDesc}>{hotel.desc}</p>
                 <span className={styles.cardLink}>
                   Explore <span className={styles.arrow}>→</span>

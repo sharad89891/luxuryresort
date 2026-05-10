@@ -4,7 +4,7 @@ import Link from 'next/link';
 import styles from './page.module.css';
 
 export const metadata: Metadata = {
-  title: 'Wildlife Resorts | Aura Hotels',
+  title: 'Wildlife Resorts | Majesty Hotels',
   description: 'Experience the raw beauty of nature without compromising on luxury. Our safari lodges offer unparalleled access to India&apos;s most spectacular tiger reserves. Wake up to the sounds of the jungle and embark on thrilling safaris led by expert naturalists.',
 };
 
@@ -125,7 +125,7 @@ export default function WildlifeResortsPage() {
         <div className={styles.ctaOverlay} />
         <div className={styles.ctaContent}>
           <h2 className={styles.ctaTitle}>Ready to Experience Aura?</h2>
-          <p className={styles.ctaDesc}>Join Aura Circle for exclusive rates, or book your next extraordinary escape today.</p>
+          <p className={styles.ctaDesc}>Join Majesty Circle for exclusive rates, or book your next extraordinary escape today.</p>
           <Link href="/book" className={styles.ctaBtn}>
             Book Now
           </Link>

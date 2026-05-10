@@ -11,9 +11,9 @@ const pagesData = [
     introTitle: 'Live Like Royalty',
     introDesc: 'Step into a world of unhurried luxury and royal grandeur. Our authentic palace hotels are living monuments, offering a glimpse into the opulent lifestyle of India\'s erstwhile royalty. Every corridor whispers tales of valour, and every suite is a masterpiece of regal design.',
     items: [
-      { name: 'The Aura Mahal Palace', location: 'Mumbai', desc: 'The crown jewel of our collection, featuring iconic floating staircases, Florentine domes, and legendary sea views.', price: 'From ₹35,000', image: '/images/hotel_lobby_grand_1778416389976.png' },
+      { name: 'The Majesty Palace', location: 'Mumbai', desc: 'The crown jewel of our collection, featuring iconic floating staircases, Florentine domes, and legendary sea views.', price: 'From ₹35,000', image: '/images/hotel_lobby_grand_1778416389976.png' },
       { name: 'Rambagh Palace', location: 'Jaipur', desc: 'Originally the residence of the Maharaja of Jaipur, featuring 47 acres of perfectly manicured Mughal gardens.', price: 'From ₹45,000', image: '/images/heritage_palace_exterior_1778416158734.png' },
-      { name: 'Aura Lake Palace', location: 'Udaipur', desc: 'An ethereal white marble palace that floats magically on the tranquil waters of Lake Pichola.', price: 'From ₹55,000', image: '/images/infinity_pool_view_1778416175800.png' }
+      { name: 'Majesty Lake Palace', location: 'Udaipur', desc: 'An ethereal white marble palace that floats magically on the tranquil waters of Lake Pichola.', price: 'From ₹55,000', image: '/images/infinity_pool_view_1778416175800.png' }
     ]
   },
   {
@@ -23,7 +23,7 @@ const pagesData = [
     introTitle: 'Sun, Sand & Soul',
     introDesc: 'Wake up to the gentle lullaby of ocean waves. Our beachfront resorts are sanctuaries of coastal luxury, offering private beaches, world-class water sports, and endless horizons.',
     items: [
-      { name: 'Aura Exotica', location: 'Goa', desc: 'Mediterranean-inspired architecture spread across 56 acres of lush gardens along Benaulim Beach.', price: 'From ₹25,000', image: '/images/beach_resort_view_1778416217181.png' },
+      { name: 'Majesty Exotica', location: 'Goa', desc: 'Mediterranean-inspired architecture spread across 56 acres of lush gardens along Benaulim Beach.', price: 'From ₹25,000', image: '/images/beach_resort_view_1778416217181.png' },
       { name: 'Aura Coral Reef', location: 'Maldives', desc: 'Overwater villas, vibrant coral reefs, and untouched white sands in a private lagoon.', price: 'From ₹85,000', image: '/images/infinity_pool_view_1778416175800.png' },
       { name: 'Aura Fisherman\'s Cove', location: 'Chennai', desc: 'Built on the ramparts of an old Dutch Fort, offering rugged luxury on the Bay of Bengal.', price: 'From ₹18,000', image: '/images/presidential_villa_1778416375029.png' }
     ]
@@ -48,7 +48,7 @@ const pagesData = [
     introDesc: 'Located in the beating heart of global metropolises, our city hotels are tranquil havens designed for the modern luxury traveller and business elite.',
     items: [
       { name: 'Aura Lands End', location: 'Mumbai', desc: 'Overlooking the Arabian Sea and the Bandra-Worli Sea Link, the ultimate city retreat.', price: 'From ₹18,000', image: '/images/hotel_lobby_grand_1778416389976.png' },
-      { name: 'Aura Palace', location: 'New Delhi', desc: 'Set in six acres of lush gardens in the heart of India\'s capital.', price: 'From ₹20,000', image: '/images/presidential_villa_1778416375029.png' },
+      { name: 'Majesty Palace', location: 'New Delhi', desc: 'Set in six acres of lush gardens in the heart of India\'s capital.', price: 'From ₹20,000', image: '/images/presidential_villa_1778416375029.png' },
       { name: 'Aura West End', location: 'London', desc: 'Classic British charm meets Indian hospitality near Buckingham Palace.', price: 'From £450', image: '/images/luxury_suite_interior_1778416076439.png' }
     ]
   },
@@ -157,7 +157,7 @@ const pagesData = [
     title: 'Timeless Weddings',
     heroImage: '/images/wedding_banquet_hall_1778416202576.png',
     introTitle: 'Your Perfect Day',
-    introDesc: 'From intimate beachside vows to grand palatial extravaganzas, Aura Hotels has been the backdrop to the world\'s most beautiful love stories. We orchestrate every detail flawlessly.',
+    introDesc: 'From intimate beachside vows to grand palatial extravaganzas, Majesty Hotels has been the backdrop to the world\'s most beautiful love stories. We orchestrate every detail flawlessly.',
     items: [
       { name: 'Palace Weddings', location: 'Rajasthan & Hyderabad', desc: 'Exchange vows in majestic courtyards with royal processions and fireworks.', price: 'Bespoke', image: '/images/heritage_palace_exterior_1778416158734.png' },
       { name: 'Beachside Ceremonies', location: 'Goa & Maldives', desc: 'Barefoot luxury ceremonies on pristine white sands at sunset.', price: 'Bespoke', image: '/images/beach_resort_view_1778416217181.png' },
@@ -280,10 +280,10 @@ const pagesData = [
   // ================= EXTRAS (Footer etc) =================
   {
     path: 'innercircle',
-    title: 'Aura Circle',
+    title: 'Majesty Circle',
     heroImage: '/images/presidential_villa_1778416375029.png',
     introTitle: 'Loyalty Reimagined',
-    introDesc: 'Welcome to Aura Circle, a loyalty programme designed to recognize and reward your relationship with us. Earn points across stays, dining, and spa treatments, and redeem them for extraordinary experiences.',
+    introDesc: 'Welcome to Majesty Circle, a loyalty programme designed to recognize and reward your relationship with us. Earn points across stays, dining, and spa treatments, and redeem them for extraordinary experiences.',
     items: [
       { name: 'Silver Tier', location: 'Entry Level', desc: 'Enjoy members-only rates, complimentary Wi-Fi, and late checkout up to 2 PM.', price: 'Free to join', image: '/images/hotel_lobby_grand_1778416389976.png' },
       { name: 'Gold Tier', location: 'Mid Level', desc: 'All Silver benefits plus complimentary room upgrades, early check-in, and 15% dining discount.', price: 'Requires 20 Nights', image: '/images/luxury_suite_interior_1778416076439.png' },
@@ -307,7 +307,7 @@ const pagesData = [
     title: 'Our Story',
     heroImage: '/images/heritage_palace_exterior_1778416158734.png',
     introTitle: 'Soulful Luxury Since 1903',
-    introDesc: 'For over a century, Aura Hotels has defined the art of luxury hospitality. From building India\'s first luxury hotel to restoring historic palaces, our legacy is built on the foundation of soulful, heartfelt service.',
+    introDesc: 'For over a century, Majesty Hotels has defined the art of luxury hospitality. From building India\'s first luxury hotel to restoring historic palaces, our legacy is built on the foundation of soulful, heartfelt service.',
     items: [
       { name: 'The Original Icon', location: '1903', desc: 'The opening of our first hotel in Mumbai, setting a new global standard for luxury.', price: 'History', image: '/images/hotel_lobby_grand_1778416389976.png' },
       { name: 'Palace Restorations', location: '1970s', desc: 'Pioneering the conversion of authentic royal palaces into world-class luxury hotels.', price: 'Heritage', image: '/images/heritage_palace_exterior_1778416158734.png' },
@@ -319,7 +319,7 @@ const pagesData = [
     title: 'Sustainability',
     heroImage: '/images/cultural_experiences_1778416250752.png',
     introTitle: 'A Commitment to Tomorrow',
-    introDesc: 'At Aura Hotels, we believe that true luxury must be sustainable. Our environmental initiatives focus on renewable energy, water conservation, and supporting local artisan communities.',
+    introDesc: 'At Majesty Hotels, we believe that true luxury must be sustainable. Our environmental initiatives focus on renewable energy, water conservation, and supporting local artisan communities.',
     items: [
       { name: 'Renewable Energy', location: 'Operations', desc: 'Over 50% of our power requirements are met through wind and solar energy.', price: 'Eco-Friendly', image: '/images/infinity_pool_view_1778416175800.png' },
       { name: 'Zero Single-Use Plastic', location: 'Operations', desc: 'We have eliminated single-use plastics across our rooms, dining, and spa facilities.', price: 'Eco-Friendly', image: '/images/beach_resort_view_1778416217181.png' },
@@ -343,9 +343,9 @@ const pagesData = [
     title: 'Press Room',
     heroImage: '/images/presidential_villa_1778416375029.png',
     introTitle: 'Latest Updates',
-    introDesc: 'Explore the latest news, press releases, media coverage, and brand announcements from Aura Hotels globally.',
+    introDesc: 'Explore the latest news, press releases, media coverage, and brand announcements from Majesty Hotels globally.',
     items: [
-      { name: 'Forbes Travel Guide', location: 'Award', desc: 'Aura Hotels secures the highest number of 5-star ratings in the hospitality industry.', price: '2025', image: '/images/hotel_lobby_grand_1778416389976.png' },
+      { name: 'Forbes Travel Guide', location: 'Award', desc: 'Majesty Hotels secures the highest number of 5-star ratings in the hospitality industry.', price: '2025', image: '/images/hotel_lobby_grand_1778416389976.png' },
       { name: 'New Resort Opening', location: 'Launch', desc: 'Announcing the opening of our newest eco-luxury resort in the Himalayas.', price: 'Recent', image: '/images/infinity_pool_view_1778416175800.png' },
       { name: 'Culinary Excellence', location: 'Award', desc: 'Three of our flagship restaurants receive prestigious Michelin stars.', price: '2025', image: '/images/fine_dining_restaurant_1778416112215.png' }
     ]
@@ -462,7 +462,7 @@ import Link from 'next/link';
 import styles from './page.module.css';
 
 export const metadata: Metadata = {
-  title: '${page.title} | Aura Hotels',
+  title: '${page.title} | Majesty Hotels',
   description: '${page.introDesc.replace(/'/g, "&apos;")}',
 };
 

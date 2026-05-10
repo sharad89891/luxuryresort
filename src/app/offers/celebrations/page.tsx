@@ -28,7 +28,7 @@ export default function OffersPage() {
       {/* Intro Section */}
       <section className={styles.introSection}>
         <div className={styles.container}>
-          <p className={styles.introText}>From fairytale weddings to milestone birthdays, celebrate life\'s most precious moments with the legendary hospitality of Aura Hotels. Our packages are designed to make every detail perfect.</p>
+          <p className={styles.introText}>From fairytale weddings to milestone birthdays, celebrate life\'s most precious moments with the legendary hospitality of Majesty Hotels. Our packages are designed to make every detail perfect.</p>
         </div>
       </section>
 

@@ -4,7 +4,7 @@ import Link from 'next/link';
 import styles from './page.module.css';
 
 export const metadata: Metadata = {
-  title: 'Beach Resorts | Aura Hotels',
+  title: 'Beach Resorts | Majesty Hotels',
   description: 'Wake up to the gentle lullaby of ocean waves. Our beachfront resorts are sanctuaries of coastal luxury, offering private beaches, world-class water sports, and endless horizons. Designed to blend seamlessly with nature, they offer the ultimate tropical escape.',
 };
 
@@ -45,7 +45,7 @@ export default function BeachResortsPage() {
       {/* Featured Properties Section */}
       <section className={styles.featuredSection}>
         <div className={styles.container}>
-          {[{"name":"Aura Exotica Resort","location":"Goa","desc":"Spread across 56 acres of lush gardens along Benaulim Beach, this Mediterranean-inspired resort offers an oasis of tranquility. Featuring private pool villas, an award-winning spa, and unparalleled coastal dining.","image":"/images/beach_resort_view_1778416217181.png","highlights":["Private Beach Access","Golf Course","Award-winning Spa"]},{"name":"Aura Coral Reef","location":"Maldives","desc":"Set in a private lagoon, our Maldivian retreat features spectacular overwater villas with glass floors, vibrant coral reefs right at your doorstep, and personalized butler service on untouched white sands.","image":"/images/infinity_pool_view_1778416175800.png","highlights":["Overwater Villas","PADI Dive Centre","Submarine Dining"]}].map((feat: any, idx: number) => (
+          {[{"name":"Majesty Exotica Resort","location":"Goa","desc":"Spread across 56 acres of lush gardens along Benaulim Beach, this Mediterranean-inspired resort offers an oasis of tranquility. Featuring private pool villas, an award-winning spa, and unparalleled coastal dining.","image":"/images/beach_resort_view_1778416217181.png","highlights":["Private Beach Access","Golf Course","Award-winning Spa"]},{"name":"Aura Coral Reef","location":"Maldives","desc":"Set in a private lagoon, our Maldivian retreat features spectacular overwater villas with glass floors, vibrant coral reefs right at your doorstep, and personalized butler service on untouched white sands.","image":"/images/infinity_pool_view_1778416175800.png","highlights":["Overwater Villas","PADI Dive Centre","Submarine Dining"]}].map((feat: any, idx: number) => (
             <div key={idx} className={styles.featuredRow}>
               <div className={styles.featImgWrap}>
                 <Image
@@ -125,7 +125,7 @@ export default function BeachResortsPage() {
         <div className={styles.ctaOverlay} />
         <div className={styles.ctaContent}>
           <h2 className={styles.ctaTitle}>Ready to Experience Aura?</h2>
-          <p className={styles.ctaDesc}>Join Aura Circle for exclusive rates, or book your next extraordinary escape today.</p>
+          <p className={styles.ctaDesc}>Join Majesty Circle for exclusive rates, or book your next extraordinary escape today.</p>
           <Link href="/book" className={styles.ctaBtn}>
             Book Now
           </Link>

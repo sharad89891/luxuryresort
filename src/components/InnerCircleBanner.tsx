@@ -12,7 +12,7 @@ export default function InnerCircleBanner() {
           <span className={styles.decorLine} />
         </div>
         <span className={styles.eyebrow}>Loyalty Reimagined</span>
-        <h2 className={styles.title}>Aura Circle</h2>
+        <h2 className={styles.title}>Majesty Circle</h2>
         <p className={styles.subtitle}>
           Become a member and discover a world of privileges — exclusive rates, 
           room upgrades, curated experiences, and a personalised journey at every Aura property.

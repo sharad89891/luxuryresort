@@ -4,8 +4,8 @@ import Link from 'next/link';
 import styles from './page.module.css';
 
 export const metadata: Metadata = {
-  title: 'Sustainability | Aura Hotels',
-  description: 'At Aura Hotels, we believe that true luxury must be sustainable. Our environmental initiatives focus on renewable energy, water conservation, and supporting local artisan communities.',
+  title: 'Sustainability | Majesty Hotels',
+  description: 'At Majesty Hotels, we believe that true luxury must be sustainable. Our environmental initiatives focus on renewable energy, water conservation, and supporting local artisan communities.',
 };
 
 export default function SustainabilityPage() {
@@ -39,7 +39,7 @@ export default function SustainabilityPage() {
           <h2 className={styles.introTitle}>A Commitment to Tomorrow</h2>
           <div className={styles.goldLineCenter} />
           <p className={styles.introText}>
-            At Aura Hotels, we believe that true luxury must be sustainable. Our environmental initiatives focus on renewable energy, water conservation, and supporting local artisan communities.
+            At Majesty Hotels, we believe that true luxury must be sustainable. Our environmental initiatives focus on renewable energy, water conservation, and supporting local artisan communities.
           </p>
         </div>
       </section>

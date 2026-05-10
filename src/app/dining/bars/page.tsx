@@ -4,7 +4,7 @@ import Link from 'next/link';
 import styles from './page.module.css';
 
 export const metadata: Metadata = {
-  title: 'Bars & Lounges | Aura Hotels Dining',
+  title: 'Bars & Lounges | Majesty Hotels Dining',
   description: 'Elevate your evenings. Whether you are looking for a historic polo bar serving rare single malts or a high-energy rooftop lounge with panoramic city views and live DJs, our bars define the art of mixology. Each venue offers a distinct atmosphere, premium spirits, and crafted experiences.',
 };
 
@@ -45,7 +45,7 @@ export default function BarsLoungesPage() {
       {/* Featured Dining Section */}
       <section className={styles.featuredSection}>
         <div className={styles.container}>
-          {[{"name":"Aura Rooftop Bar","location":"Aura Palace, New Delhi","desc":"A vibrant outdoor setting that comes alive as the sun sets over the capital. Enjoy artisanal cocktails, a curated selection of global tapas, and live DJ sets under a canopy of stars.","image":"/images/rooftop_bar_city_1778416307700.png","highlights":["Panoramic City Views","Live DJ Sets","Artisanal Mixology"]},{"name":"The Harbour Bar","location":"The Majesty Palace, Mumbai","desc":"Holding Mumbai's first-ever liquor license, The Harbour Bar is a historic institution. Featuring prohibition-era cocktails, rare spirits, and an atmosphere steeped in the glamour of the 1930s.","image":"/images/luxury_suite_interior_1778416076439.png","highlights":["Historic 1933 License","Prohibition Cocktails","Harbour Views"]}].map((feat: any, idx: number) => (
+          {[{"name":"Aura Rooftop Bar","location":"Majesty Palace, New Delhi","desc":"A vibrant outdoor setting that comes alive as the sun sets over the capital. Enjoy artisanal cocktails, a curated selection of global tapas, and live DJ sets under a canopy of stars.","image":"/images/rooftop_bar_city_1778416307700.png","highlights":["Panoramic City Views","Live DJ Sets","Artisanal Mixology"]},{"name":"The Harbour Bar","location":"The Majesty Palace, Mumbai","desc":"Holding Mumbai's first-ever liquor license, The Harbour Bar is a historic institution. Featuring prohibition-era cocktails, rare spirits, and an atmosphere steeped in the glamour of the 1930s.","image":"/images/luxury_suite_interior_1778416076439.png","highlights":["Historic 1933 License","Prohibition Cocktails","Harbour Views"]}].map((feat: any, idx: number) => (
             <div key={idx} className={styles.featuredRow}>
               <div className={styles.featImgWrap}>
                 <Image

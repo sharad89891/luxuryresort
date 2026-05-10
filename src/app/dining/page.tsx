@@ -4,7 +4,7 @@ import Link from 'next/link';
 import styles from './page.module.css';
 
 export const metadata: Metadata = {
-  title: 'Dining & Culinary | Aura Hotels Dining',
+  title: 'Dining & Culinary | Majesty Hotels Dining',
   description: 'From Michelin-starred chefs to local culinary maestros, Aura&apos;s kitchens are theatres of passion. With over 300 restaurants, bars and lounges across our properties — each one a destination in its own right — we source the finest regional ingredients, honour ancestral recipes, and present them with the artistry of world-class hospitality.',
 };
 
@@ -45,7 +45,7 @@ export default function DiningCulinaryPage() {
       {/* Featured Dining Section */}
       <section className={styles.featuredSection}>
         <div className={styles.container}>
-          {[{"name":"Wasabi by Morimoto","location":"The Majesty Palace, Mumbai","desc":"A premier Japanese restaurant by the legendary Iron Chef Masaharu Morimoto, offering contemporary Japanese cuisine in a stunning setting.","image":"/images/gourmet_cuisine_dish_1778416264157.png","highlights":["Contemporary Japanese","Iron Chef Signature","Harbour Views"]},{"name":"Masala Art","location":"Aura Palace, New Delhi","desc":"An acclaimed showcase of regional Indian cuisine, where traditional recipes are reimagined with contemporary flair and the finest spices.","image":"/images/fine_dining_restaurant_1778416112215.png","highlights":["Regional Indian","Contemporary Flair","Award-Winning"]}].map((feat: any, idx: number) => (
+          {[{"name":"Wasabi by Morimoto","location":"The Majesty Palace, Mumbai","desc":"A premier Japanese restaurant by the legendary Iron Chef Masaharu Morimoto, offering contemporary Japanese cuisine in a stunning setting.","image":"/images/gourmet_cuisine_dish_1778416264157.png","highlights":["Contemporary Japanese","Iron Chef Signature","Harbour Views"]},{"name":"Masala Art","location":"Majesty Palace, New Delhi","desc":"An acclaimed showcase of regional Indian cuisine, where traditional recipes are reimagined with contemporary flair and the finest spices.","image":"/images/fine_dining_restaurant_1778416112215.png","highlights":["Regional Indian","Contemporary Flair","Award-Winning"]}].map((feat: any, idx: number) => (
             <div key={idx} className={styles.featuredRow}>
               <div className={styles.featImgWrap}>
                 <Image

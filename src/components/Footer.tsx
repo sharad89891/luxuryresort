@@ -33,7 +33,7 @@ const footerLinks = {
   ],
   'About Aura': [
     { label: 'Our Story', href: '/about' },
-    { label: 'Aura Circle', href: '/innercircle' },
+    { label: 'Majesty Circle', href: '/innercircle' },
     { label: 'Gift Cards', href: '/gifting' },
     { label: 'Sustainability', href: '/sustainability' },
     { label: 'Careers', href: '/careers' },
@@ -56,7 +56,7 @@ export default function Footer() {
       <div className={styles.newsletter}>
         <div className={styles.newsletterInner}>
           <div className={styles.newsletterText}>
-            <h3 className={styles.newsletterTitle}>Aura Circle</h3>
+            <h3 className={styles.newsletterTitle}>Majesty Circle</h3>
             <p className={styles.newsletterDesc}>
               Join our exclusive loyalty programme and earn points on every stay, dining, and spa experience.
             </p>
@@ -83,13 +83,13 @@ export default function Footer() {
         <div className={styles.footerInner}>
           {/* Brand Column */}
           <div className={styles.brandCol}>
-            <Link href="/" className={styles.footerLogo} aria-label="Aura Hotels">
-              <span className={styles.logoMain}>AURA</span>
+            <Link href="/" className={styles.footerLogo} aria-label="Majesty Hotels">
+              <span className={styles.logoMain}>MAJESTY</span>
               <span className={styles.logoSub}>HOTELS · RESORTS · PALACES</span>
             </Link>
             <p className={styles.brandDesc}>
               Soulful Luxury Since 1903. From the palaces of India to the world's 
-              most coveted destinations, Aura Hotels offers experiences that honour the 
+              most coveted destinations, Majesty Hotels offers experiences that honour the 
               extraordinary.
             </p>
             <div className={styles.socialLinks}>

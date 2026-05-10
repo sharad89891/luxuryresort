@@ -23,7 +23,7 @@ export default function WeddingsSection() {
           Weddings at Aura
         </h2>
         <p className={styles.subtitle}>
-          Every love story is unique, and at Aura Hotels, we craft bespoke weddings 
+          Every love story is unique, and at Majesty Hotels, we craft bespoke weddings 
           that honour the grandeur of your moment. From opulent palace celebrations 
           to intimate beachside ceremonies, we make every wish come true.
         </p>

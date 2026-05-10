@@ -35,7 +35,7 @@ export default function BookPage() {
         <div className={styles.heroContent}>
           <h1 className={styles.title}>Reservations</h1>
           <p className={styles.desc}>
-            Experience the pinnacle of luxury. Begin your extraordinary journey with Aura Hotels.
+            Experience the pinnacle of luxury. Begin your extraordinary journey with Majesty Hotels.
           </p>
         </div>
       </section>
@@ -63,14 +63,14 @@ export default function BookPage() {
                 <optgroup label="Palaces">
                   <option value="aura-mahal-mumbai">The Majesty Palace, Mumbai</option>
                   <option value="rambagh-jaipur">Rambagh Palace, Jaipur</option>
-                  <option value="aura-lake-udaipur">Aura Lake Palace, Udaipur</option>
+                  <option value="aura-lake-udaipur">Majesty Lake Palace, Udaipur</option>
                 </optgroup>
                 <optgroup label="Beach Resorts">
-                  <option value="exotica-goa">Aura Exotica Resort, Goa</option>
+                  <option value="exotica-goa">Majesty Exotica Resort, Goa</option>
                   <option value="coral-reef-maldives">Aura Coral Reef, Maldives</option>
                 </optgroup>
                 <optgroup label="City Hotels">
-                  <option value="aura-palace-delhi">Aura Palace, New Delhi</option>
+                  <option value="aura-palace-delhi">Majesty Palace, New Delhi</option>
                   <option value="west-end-london">Aura West End, London</option>
                 </optgroup>
               </select>
@@ -172,7 +172,7 @@ export default function BookPage() {
           </div>
           <div className={styles.perkCard}>
             <span className={styles.perkIcon}>🛎️</span>
-            <h4 className={styles.perkName}>Aura Circle Rewards</h4>
+            <h4 className={styles.perkName}>Majesty Circle Rewards</h4>
             <p className={styles.perkDesc}>
               Earn points instantly on your stay and dining experiences, and redeem them for future upgrades and rewards.
             </p>

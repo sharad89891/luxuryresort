@@ -4,7 +4,7 @@ import Link from 'next/link';
 import styles from './page.module.css';
 
 export const metadata: Metadata = {
-  title: 'High Tea | Aura Hotels Dining',
+  title: 'High Tea | Majesty Hotels Dining',
   description: 'Indulge in our legendary High Tea service, a time-honored tradition that brings the elegance of the colonial era into the modern day. Enjoy a carefully curated selection of single-estate teas paired with warm scones, clotted cream, delicate finger sandwiches, and exquisite pastries.',
 };
 
@@ -45,7 +45,7 @@ export default function HighTeaPage() {
       {/* Featured Dining Section */}
       <section className={styles.featuredSection}>
         <div className={styles.container}>
-          {[{"name":"Sea Lounge","location":"The Majesty Palace, Mumbai","desc":"An iconic Mumbai experience. The Sea Lounge offers classical piano music, a lavish high tea buffet featuring both English classics and local street food delicacies, and breathtaking views of the Gateway of India and the Arabian Sea.","image":"/images/hotel_lobby_grand_1778416389976.png","highlights":["Arabian Sea Views","Live Piano Music","English & Local Delicacies"]},{"name":"The Emperor Lounge","location":"Aura Palace, New Delhi","desc":"An elegant, sun-lit setting perfect for informal meetings or leisurely afternoons. Offering bespoke tea blends, single-origin coffees from global estates, and a glass-enclosed pastry display featuring Parisian-style desserts.","image":"/images/fine_dining_restaurant_1778416112215.png","highlights":["Single-Origin Coffees","Parisian Pastries","Sun-lit Atrium"]}].map((feat: any, idx: number) => (
+          {[{"name":"Sea Lounge","location":"The Majesty Palace, Mumbai","desc":"An iconic Mumbai experience. The Sea Lounge offers classical piano music, a lavish high tea buffet featuring both English classics and local street food delicacies, and breathtaking views of the Gateway of India and the Arabian Sea.","image":"/images/hotel_lobby_grand_1778416389976.png","highlights":["Arabian Sea Views","Live Piano Music","English & Local Delicacies"]},{"name":"The Emperor Lounge","location":"Majesty Palace, New Delhi","desc":"An elegant, sun-lit setting perfect for informal meetings or leisurely afternoons. Offering bespoke tea blends, single-origin coffees from global estates, and a glass-enclosed pastry display featuring Parisian-style desserts.","image":"/images/fine_dining_restaurant_1778416112215.png","highlights":["Single-Origin Coffees","Parisian Pastries","Sun-lit Atrium"]}].map((feat: any, idx: number) => (
             <div key={idx} className={styles.featuredRow}>
               <div className={styles.featImgWrap}>
                 <Image

@@ -4,7 +4,7 @@ import Link from 'next/link';
 import styles from './page.module.css';
 
 export const metadata: Metadata = {
-  title: 'Specialty Cuisine | Aura Hotels Dining',
+  title: 'Specialty Cuisine | Majesty Hotels Dining',
   description: 'Travel the world through your palate. From authentic coastal Indian seafood prepared with age-old family recipes to the delicate spices of the Eastern Mediterranean, our specialty restaurants offer highly focused, expertly crafted menus that transport you to the heart of the region.',
 };
 

@@ -4,8 +4,8 @@ import Link from 'next/link';
 import styles from './page.module.css';
 
 export const metadata: Metadata = {
-  title: 'Aura Circle | Aura Hotels',
-  description: 'Welcome to Aura Circle, a loyalty programme designed to recognize and reward your relationship with us. Earn points across stays, dining, and spa treatments, and redeem them for extraordinary experiences.',
+  title: 'Majesty Circle | Majesty Hotels',
+  description: 'Welcome to Majesty Circle, a loyalty programme designed to recognize and reward your relationship with us. Earn points across stays, dining, and spa treatments, and redeem them for extraordinary experiences.',
 };
 
 export default function AuraCirclePage() {
@@ -16,7 +16,7 @@ export default function AuraCirclePage() {
         <div className={styles.heroBg}>
           <Image
             src="/images/presidential_villa_1778416375029.png"
-            alt="Aura Circle"
+            alt="Majesty Circle"
             fill
             priority
             style={{ objectFit: 'cover' }}
@@ -26,7 +26,7 @@ export default function AuraCirclePage() {
         </div>
         <div className={styles.heroContent}>
           <span className={styles.eyebrow}>Discover</span>
-          <h1 className={styles.title}>Aura Circle</h1>
+          <h1 className={styles.title}>Majesty Circle</h1>
           <div className={styles.goldLine} />
           <p className={styles.desc}>Experience the finest collection of aura circle curated for our discerning guests.</p>
         </div>
@@ -39,7 +39,7 @@ export default function AuraCirclePage() {
           <h2 className={styles.introTitle}>Loyalty Reimagined</h2>
           <div className={styles.goldLineCenter} />
           <p className={styles.introText}>
-            Welcome to Aura Circle, a loyalty programme designed to recognize and reward your relationship with us. Earn points across stays, dining, and spa treatments, and redeem them for extraordinary experiences.
+            Welcome to Majesty Circle, a loyalty programme designed to recognize and reward your relationship with us. Earn points across stays, dining, and spa treatments, and redeem them for extraordinary experiences.
           </p>
         </div>
       </section>

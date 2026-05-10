@@ -4,7 +4,7 @@ import Link from 'next/link';
 import styles from './page.module.css';
 
 export const metadata: Metadata = {
-  title: 'Mountain Retreats | Aura Hotels',
+  title: 'Mountain Retreats | Majesty Hotels',
   description: 'Breathe in the crisp, pine-scented air. Nestled in misty valleys and perched on majestic peaks, our mountain retreats offer the perfect escape from the ordinary. Reconnect with nature through guided treks, cozy fireplaces, and panoramic Himalayan views.',
 };
 
@@ -125,7 +125,7 @@ export default function MountainRetreatsPage() {
         <div className={styles.ctaOverlay} />
         <div className={styles.ctaContent}>
           <h2 className={styles.ctaTitle}>Ready to Experience Aura?</h2>
-          <p className={styles.ctaDesc}>Join Aura Circle for exclusive rates, or book your next extraordinary escape today.</p>
+          <p className={styles.ctaDesc}>Join Majesty Circle for exclusive rates, or book your next extraordinary escape today.</p>
           <Link href="/book" className={styles.ctaBtn}>
             Book Now
           </Link>

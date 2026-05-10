@@ -1,6 +1,6 @@
-'use client';
 import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import styles from './Navbar.module.css';
 
 const navItems = [
@@ -128,17 +128,18 @@ export default function Navbar() {
           </nav>
 
           {/* Logo Center */}
-          <Link href="/" className={styles.logoWrap} aria-label="Aura Hotels - Home">
-            <div className={styles.logoSvg}>
-              <svg viewBox="0 0 120 60" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                <path d="M60 4L68 18H52L60 4Z" fill="currentColor"/>
-                <rect x="52" y="18" width="16" height="24" fill="currentColor"/>
-                <path d="M30 42H90V44H30V42Z" fill="currentColor"/>
-                <text x="60" y="56" textAnchor="middle" fontFamily="Cormorant Garamond, serif" fontSize="10" fontWeight="400" fill="currentColor" letterSpacing="4">AURA</text>
-              </svg>
+          <Link href="/" className={styles.logoWrap} aria-label="Majesty Hotels - Home">
+            <div className={styles.navbarLogoImg}>
+              <Image 
+                src="/images/the_majesty_palace_logo.png" 
+                alt="Majesty Logo" 
+                width={35} 
+                height={35} 
+                style={{ filter: 'brightness(0) invert(1)' }} /* Make it white to match navbar */
+              />
             </div>
             <div className={styles.logoText}>
-              <span className={styles.logoMain}>AURA</span>
+              <span className={styles.logoMain}>MAJESTY</span>
               <span className={styles.logoSub}>HOTELS · RESORTS · PALACES</span>
             </div>
           </Link>
@@ -199,7 +200,14 @@ export default function Navbar() {
         <div className={`${styles.mobileMenu} ${mobileMenuOpen ? styles.mobileMenuOpen : ''}`}>
           <div className={styles.mobileHeader}>
             <Link href="/" onClick={() => setMobileMenuOpen(false)} className={styles.mobileLogo}>
-              <span className={styles.mobileLogoMain}>AURA</span>
+              <Image 
+                src="/images/the_majesty_palace_logo.png" 
+                alt="Majesty Logo" 
+                width={28} 
+                height={28} 
+                style={{ filter: 'brightness(0) invert(1)', marginRight: '10px' }}
+              />
+              <span className={styles.mobileLogoMain}>MAJESTY</span>
               <span className={styles.mobileLogoSub}>HOTELS · RESORTS · PALACES</span>
             </Link>
             <button className={styles.closeBtn} onClick={() => setMobileMenuOpen(false)} aria-label="Close menu">
@@ -241,7 +249,7 @@ export default function Navbar() {
                 Book Now
               </Link>
               <Link href="/innercircle" className={styles.mobileInnerCircle} onClick={() => setMobileMenuOpen(false)}>
-                Aura Circle
+                Majesty Circle
               </Link>
             </div>
           </nav>

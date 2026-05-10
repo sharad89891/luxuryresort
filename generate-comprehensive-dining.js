@@ -11,14 +11,14 @@ const diningData = [
     featured: [
       {
         name: 'Wasabi by Morimoto',
-        location: 'The Aura Mahal Palace, Mumbai',
+        location: 'The Majesty Palace, Mumbai',
         desc: 'A premier Japanese restaurant crafted by the legendary Iron Chef Masaharu Morimoto. Featuring ingredients flown in daily from Tsukiji market, Wasabi offers contemporary Japanese cuisine with an unparalleled view of the Gateway of India.',
         image: '/images/fine_dining_restaurant_1778416112215.png',
         highlights: ['Omakase Tasting Menus', 'Sushi Bar & Teppanyaki', 'Award-Winning Sake Menu']
       },
       {
         name: 'Varq',
-        location: 'Aura Palace, New Delhi',
+        location: 'Majesty Palace, New Delhi',
         desc: 'Varq seamlessly blends traditional Indian flavors with contemporary plating and modern cooking techniques. The restaurant takes its name from the edible gold and silver foil used in royal Indian cuisine, reflecting the opulence of the dining experience.',
         image: '/images/gourmet_cuisine_dish_1778416264157.png',
         highlights: ['Modern Indian Cuisine', 'Bespoke Art Installations', 'Curated Tea Pairings']
@@ -52,7 +52,7 @@ const diningData = [
       },
       {
         name: 'Golden Dragon',
-        location: 'The Aura Mahal Palace, Mumbai',
+        location: 'The Majesty Palace, Mumbai',
         desc: 'India\'s first authentic Sichuan restaurant. Golden Dragon remains an institution, beloved for its legendary Peking Duck, delicate dim sums, and fiery Sichuan specialties crafted by master chefs from mainland China.',
         image: '/images/fine_dining_restaurant_1778416112215.png',
         highlights: ['Live Dim Sum Kitchen', 'Legendary Peking Duck', 'Traditional Tea Ceremony']
@@ -79,14 +79,14 @@ const diningData = [
     featured: [
       {
         name: 'Aura Rooftop Bar',
-        location: 'Aura Palace, New Delhi',
+        location: 'Majesty Palace, New Delhi',
         desc: 'A vibrant outdoor setting that comes alive as the sun sets over the capital. Enjoy artisanal cocktails, a curated selection of global tapas, and live DJ sets under a canopy of stars.',
         image: '/images/rooftop_bar_city_1778416307700.png',
         highlights: ['Panoramic City Views', 'Live DJ Sets', 'Artisanal Mixology']
       },
       {
         name: 'The Harbour Bar',
-        location: 'The Aura Mahal Palace, Mumbai',
+        location: 'The Majesty Palace, Mumbai',
         desc: 'Holding Mumbai\'s first-ever liquor license, The Harbour Bar is a historic institution. Featuring prohibition-era cocktails, rare spirits, and an atmosphere steeped in the glamour of the 1930s.',
         image: '/images/luxury_suite_interior_1778416076439.png',
         highlights: ['Historic 1933 License', 'Prohibition Cocktails', 'Harbour Views']
@@ -113,14 +113,14 @@ const diningData = [
     featured: [
       {
         name: 'Sea Lounge',
-        location: 'The Aura Mahal Palace, Mumbai',
+        location: 'The Majesty Palace, Mumbai',
         desc: 'An iconic Mumbai experience. The Sea Lounge offers classical piano music, a lavish high tea buffet featuring both English classics and local street food delicacies, and breathtaking views of the Gateway of India and the Arabian Sea.',
         image: '/images/hotel_lobby_grand_1778416389976.png',
         highlights: ['Arabian Sea Views', 'Live Piano Music', 'English & Local Delicacies']
       },
       {
         name: 'The Emperor Lounge',
-        location: 'Aura Palace, New Delhi',
+        location: 'Majesty Palace, New Delhi',
         desc: 'An elegant, sun-lit setting perfect for informal meetings or leisurely afternoons. Offering bespoke tea blends, single-origin coffees from global estates, and a glass-enclosed pastry display featuring Parisian-style desserts.',
         image: '/images/fine_dining_restaurant_1778416112215.png',
         highlights: ['Single-Origin Coffees', 'Parisian Pastries', 'Sun-lit Atrium']
@@ -147,14 +147,14 @@ const diningData = [
     featured: [
       {
         name: 'Wasabi by Morimoto',
-        location: 'The Aura Mahal Palace, Mumbai',
+        location: 'The Majesty Palace, Mumbai',
         desc: 'A premier Japanese restaurant by the legendary Iron Chef Masaharu Morimoto, offering contemporary Japanese cuisine in a stunning setting.',
         image: '/images/gourmet_cuisine_dish_1778416264157.png',
         highlights: ['Contemporary Japanese', 'Iron Chef Signature', 'Harbour Views']
       },
       {
         name: 'Masala Art',
-        location: 'Aura Palace, New Delhi',
+        location: 'Majesty Palace, New Delhi',
         desc: 'An acclaimed showcase of regional Indian cuisine, where traditional recipes are reimagined with contemporary flair and the finest spices.',
         image: '/images/fine_dining_restaurant_1778416112215.png',
         highlights: ['Regional Indian', 'Contemporary Flair', 'Award-Winning']
@@ -260,7 +260,7 @@ import Link from 'next/link';
 import styles from './page.module.css';
 
 export const metadata: Metadata = {
-  title: '${page.title} | Aura Hotels Dining',
+  title: '${page.title} | Majesty Hotels Dining',
   description: '${page.introDesc.replace(/'/g, "&apos;")}',
 };
 

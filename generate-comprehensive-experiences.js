@@ -109,7 +109,7 @@ const experiencesData = [
     title: 'Timeless Weddings',
     heroImage: '/images/wedding_banquet_hall_1778416202576.png',
     introTitle: 'Your Perfect Day',
-    introDesc: 'From intimate beachside vows to grand palatial extravaganzas, Aura Hotels has been the magnificent backdrop to the world\'s most beautiful love stories. Our dedicated wedding specialists orchestrate every detail flawlessly, ensuring your special day is nothing short of magical.',
+    introDesc: 'From intimate beachside vows to grand palatial extravaganzas, Majesty Hotels has been the magnificent backdrop to the world\'s most beautiful love stories. Our dedicated wedding specialists orchestrate every detail flawlessly, ensuring your special day is nothing short of magical.',
     featured: [
       {
         name: 'Palace Weddings',
@@ -177,7 +177,7 @@ const experiencesData = [
     title: 'Experiences',
     heroImage: '/images/cultural_experiences_1778416250752.png',
     introTitle: 'Journeys Beyond the Ordinary',
-    introDesc: 'At Aura Hotels, we believe that true luxury lies in the experiences that stay with you forever. From tracking Bengal tigers in the wild to renewing your vows in a centuries-old palace, our curated experiences are designed to immerse you in the beauty, culture, and thrill of your destination.',
+    introDesc: 'At Majesty Hotels, we believe that true luxury lies in the experiences that stay with you forever. From tracking Bengal tigers in the wild to renewing your vows in a centuries-old palace, our curated experiences are designed to immerse you in the beauty, culture, and thrill of your destination.',
     featured: [
       {
         name: 'Cultural Immersion',
@@ -293,7 +293,7 @@ import Link from 'next/link';
 import styles from './page.module.css';
 
 export const metadata: Metadata = {
-  title: '${page.title} | Aura Hotels Experiences',
+  title: '${page.title} | Majesty Hotels Experiences',
   description: '${page.introDesc.replace(/'/g, "&apos;")}',
 };
 

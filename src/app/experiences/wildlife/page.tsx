@@ -4,7 +4,7 @@ import Link from 'next/link';
 import styles from './page.module.css';
 
 export const metadata: Metadata = {
-  title: 'Wildlife Safari | Aura Hotels Experiences',
+  title: 'Wildlife Safari | Majesty Hotels Experiences',
   description: 'Venture into the heart of India&apos;s most renowned national parks. Our expert naturalists will guide you on bespoke safaris to witness the majestic Bengal Tiger, elusive leopards, and diverse birdlife in their natural habitat. Experience the raw beauty of the jungle while enveloped in uncompromised luxury.',
 };
 

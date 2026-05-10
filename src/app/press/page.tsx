@@ -4,8 +4,8 @@ import Link from 'next/link';
 import styles from './page.module.css';
 
 export const metadata: Metadata = {
-  title: 'Press Room | Aura Hotels',
-  description: 'Explore the latest news, press releases, media coverage, and brand announcements from Aura Hotels globally.',
+  title: 'Press Room | Majesty Hotels',
+  description: 'Explore the latest news, press releases, media coverage, and brand announcements from Majesty Hotels globally.',
 };
 
 export default function PressRoomPage() {
@@ -39,7 +39,7 @@ export default function PressRoomPage() {
           <h2 className={styles.introTitle}>Latest Updates</h2>
           <div className={styles.goldLineCenter} />
           <p className={styles.introText}>
-            Explore the latest news, press releases, media coverage, and brand announcements from Aura Hotels globally.
+            Explore the latest news, press releases, media coverage, and brand announcements from Majesty Hotels globally.
           </p>
         </div>
       </section>
@@ -48,7 +48,7 @@ export default function PressRoomPage() {
       <section className={styles.gridSection}>
         <div className={styles.container}>
           <div className={styles.grid}>
-            {[{"name":"Forbes Travel Guide","location":"Award","desc":"Aura Hotels secures the highest number of 5-star ratings in the hospitality industry.","price":"2025","image":"/images/hotel_lobby_grand_1778416389976.png"},{"name":"New Resort Opening","location":"Launch","desc":"Announcing the opening of our newest eco-luxury resort in the Himalayas.","price":"Recent","image":"/images/infinity_pool_view_1778416175800.png"},{"name":"Culinary Excellence","location":"Award","desc":"Three of our flagship restaurants receive prestigious Michelin stars.","price":"2025","image":"/images/fine_dining_restaurant_1778416112215.png"}].map((item, idx) => (
+            {[{"name":"Forbes Travel Guide","location":"Award","desc":"Majesty Hotels secures the highest number of 5-star ratings in the hospitality industry.","price":"2025","image":"/images/hotel_lobby_grand_1778416389976.png"},{"name":"New Resort Opening","location":"Launch","desc":"Announcing the opening of our newest eco-luxury resort in the Himalayas.","price":"Recent","image":"/images/infinity_pool_view_1778416175800.png"},{"name":"Culinary Excellence","location":"Award","desc":"Three of our flagship restaurants receive prestigious Michelin stars.","price":"2025","image":"/images/fine_dining_restaurant_1778416112215.png"}].map((item, idx) => (
               <div key={idx} className={styles.card}>
                 <div className={styles.cardImgWrap}>
                   <Image

@@ -4,8 +4,8 @@ import Link from 'next/link';
 import styles from './page.module.css';
 
 export const metadata: Metadata = {
-  title: 'Hotels & Resorts | Aura Hotels',
-  description: 'Explore the legendary portfolio of Aura Hotels — iconic palaces, beachfront resorts, mountain retreats and city hotels across India and the world.',
+  title: 'Hotels & Resorts | Majesty Hotels',
+  description: 'Explore the legendary portfolio of Majesty Hotels — iconic palaces, beachfront resorts, mountain retreats and city hotels across India and the world.',
 };
 
 const properties = [
@@ -33,7 +33,7 @@ const properties = [
   },
   {
     id: 'aura-exotica-goa',
-    name: 'Aura Exotica Resort & Spa',
+    name: 'Majesty Exotica Resort & Spa',
     location: 'Goa',
     category: 'Beach Resort',
     rating: 5,
@@ -44,7 +44,7 @@ const properties = [
   },
   {
     id: 'aura-lake-palace',
-    name: 'Aura Lake Palace',
+    name: 'Majesty Lake Palace',
     location: 'Udaipur, Rajasthan',
     category: 'Palace',
     rating: 5,
@@ -87,7 +87,7 @@ export default function HotelsPage() {
         <div className={styles.heroBg}>
           <Image
             src="/images/hero_palace_hotel_1778416060429.png"
-            alt="Aura Hotels Portfolio"
+            alt="Majesty Hotels Portfolio"
             fill
             priority
             style={{ objectFit: 'cover' }}

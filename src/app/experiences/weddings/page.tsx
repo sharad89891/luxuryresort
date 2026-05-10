@@ -4,8 +4,8 @@ import Link from 'next/link';
 import styles from './page.module.css';
 
 export const metadata: Metadata = {
-  title: 'Timeless Weddings | Aura Hotels Experiences',
-  description: 'From intimate beachside vows to grand palatial extravaganzas, Aura Hotels has been the magnificent backdrop to the world&apos;s most beautiful love stories. Our dedicated wedding specialists orchestrate every detail flawlessly, ensuring your special day is nothing short of magical.',
+  title: 'Timeless Weddings | Majesty Hotels Experiences',
+  description: 'From intimate beachside vows to grand palatial extravaganzas, Majesty Hotels has been the magnificent backdrop to the world&apos;s most beautiful love stories. Our dedicated wedding specialists orchestrate every detail flawlessly, ensuring your special day is nothing short of magical.',
 };
 
 export default function TimelessWeddingsPage() {
@@ -37,7 +37,7 @@ export default function TimelessWeddingsPage() {
           <h2 className={styles.introTitle}>Your Perfect Day</h2>
           <div className={styles.goldLineCenter} />
           <p className={styles.introText}>
-            From intimate beachside vows to grand palatial extravaganzas, Aura Hotels has been the magnificent backdrop to the world's most beautiful love stories. Our dedicated wedding specialists orchestrate every detail flawlessly, ensuring your special day is nothing short of magical.
+            From intimate beachside vows to grand palatial extravaganzas, Majesty Hotels has been the magnificent backdrop to the world's most beautiful love stories. Our dedicated wedding specialists orchestrate every detail flawlessly, ensuring your special day is nothing short of magical.
           </p>
         </div>
       </section>

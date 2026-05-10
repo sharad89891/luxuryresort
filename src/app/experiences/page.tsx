@@ -4,8 +4,8 @@ import Link from 'next/link';
 import styles from './page.module.css';
 
 export const metadata: Metadata = {
-  title: 'Experiences | Aura Hotels Experiences',
-  description: 'At Aura Hotels, we believe that true luxury lies in the experiences that stay with you forever. From tracking Bengal tigers in the wild to renewing your vows in a centuries-old palace, our curated experiences are designed to immerse you in the beauty, culture, and thrill of your destination.',
+  title: 'Experiences | Majesty Hotels Experiences',
+  description: 'At Majesty Hotels, we believe that true luxury lies in the experiences that stay with you forever. From tracking Bengal tigers in the wild to renewing your vows in a centuries-old palace, our curated experiences are designed to immerse you in the beauty, culture, and thrill of your destination.',
 };
 
 export default function ExperiencesPage() {
@@ -37,7 +37,7 @@ export default function ExperiencesPage() {
           <h2 className={styles.introTitle}>Journeys Beyond the Ordinary</h2>
           <div className={styles.goldLineCenter} />
           <p className={styles.introText}>
-            At Aura Hotels, we believe that true luxury lies in the experiences that stay with you forever. From tracking Bengal tigers in the wild to renewing your vows in a centuries-old palace, our curated experiences are designed to immerse you in the beauty, culture, and thrill of your destination.
+            At Majesty Hotels, we believe that true luxury lies in the experiences that stay with you forever. From tracking Bengal tigers in the wild to renewing your vows in a centuries-old palace, our curated experiences are designed to immerse you in the beauty, culture, and thrill of your destination.
           </p>
         </div>
       </section>

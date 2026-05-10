@@ -4,7 +4,7 @@ import Link from 'next/link';
 import styles from './page.module.css';
 
 export const metadata: Metadata = {
-  title: 'Adventure & Outdoors | Aura Hotels Experiences',
+  title: 'Adventure & Outdoors | Majesty Hotels Experiences',
   description: 'For those who seek the extraordinary. Whether it&apos;s trekking the misty trails of the Himalayas, diving into pristine coral reefs, or navigating thrilling river rapids, our adventure experiences are designed to push boundaries. Every excursion is led by certified experts, ensuring maximum safety without compromising on the thrill.',
 };
 

@@ -4,7 +4,7 @@ import Link from 'next/link';
 import styles from './page.module.css';
 
 export const metadata: Metadata = {
-  title: 'Celebrations & Events | Aura Hotels Experiences',
+  title: 'Celebrations & Events | Majesty Hotels Experiences',
   description: 'Anniversaries, milestone birthdays, corporate retreats, or family reunions — we elevate every special occasion with bespoke dining, curated activities, and our signature heartfelt hospitality. Let us turn your celebrations into lifelong memories.',
 };
 

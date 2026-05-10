@@ -4,7 +4,7 @@ import Link from 'next/link';
 import styles from './page.module.css';
 
 export const metadata: Metadata = {
-  title: 'Cultural Heritage | Aura Hotels Experiences',
+  title: 'Cultural Heritage | Majesty Hotels Experiences',
   description: 'Immerse yourself in the vibrant tapestry of Indian culture. From private classical concerts in centuries-old courtyards to guided heritage walks through ancient monuments, we bring history to life. Our cultural experiences are curated to provide a profound connection to the local heritage, guided by historians, artisans, and storytellers.',
 };
 

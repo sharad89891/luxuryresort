@@ -4,12 +4,12 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Aura Hotels - Soulful Luxury Since 1903",
-  description: "Experience the legendary hospitality of Aura Hotels. Discover our iconic palaces, resorts, and city hotels across India and beyond. Book your luxury stay today.",
-  keywords: "Aura Hotels, luxury hotels India, palace hotels, The Majesty Palace, luxury resorts, fine dining, spa wellness",
+  title: "Majesty Hotels - Soulful Luxury Since 1903",
+  description: "Experience the legendary hospitality of Majesty Hotels. Discover our iconic palaces, resorts, and city hotels across India and beyond. Book your luxury stay today.",
+  keywords: "Majesty Hotels, luxury hotels India, palace hotels, The Majesty Palace, luxury resorts, fine dining, spa wellness",
   openGraph: {
-    title: "Aura Hotels - Soulful Luxury Since 1903",
-    description: "Experience the legendary hospitality of Aura Hotels.",
+    title: "Majesty Hotels - Soulful Luxury Since 1903",
+    description: "Experience the legendary hospitality of Majesty Hotels.",
     type: "website",
   },
 };

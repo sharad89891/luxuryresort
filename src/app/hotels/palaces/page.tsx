@@ -4,7 +4,7 @@ import Link from 'next/link';
 import styles from './page.module.css';
 
 export const metadata: Metadata = {
-  title: 'Palace Hotels | Aura Hotels',
+  title: 'Palace Hotels | Majesty Hotels',
   description: 'Step into a world of unhurried luxury. Our authentic palace hotels are living monuments, meticulously restored to offer a glimpse into the opulent lifestyle of India&apos;s erstwhile royalty. From the moment you arrive in a vintage horse-drawn carriage to the royal baths drawn by your personal butler, every second is steeped in majesty.',
 };
 
@@ -79,7 +79,7 @@ export default function PalaceHotelsPage() {
         <div className={styles.container}>
           <h2 className={styles.sectionTitle}>More Palace Hotels</h2>
           <div className={styles.grid}>
-            {[{"name":"Aura Lake Palace","location":"Udaipur","image":"/images/infinity_pool_view_1778416175800.png","desc":"An ethereal white marble palace that floats magically on the tranquil waters of Lake Pichola."},{"name":"Aura Falaknuma","location":"Hyderabad","image":"/images/presidential_villa_1778416375029.png","desc":"The former residence of the Nizam, elevated 2,000 feet above the city with horse-drawn carriage arrivals."},{"name":"Umaid Bhawan","location":"Jodhpur","image":"/images/hotel_lobby_grand_1778416389976.png","desc":"Perched high above the desert capital, one of the world's largest private residences."}].map((item: any, idx: number) => (
+            {[{"name":"Majesty Lake Palace","location":"Udaipur","image":"/images/infinity_pool_view_1778416175800.png","desc":"An ethereal white marble palace that floats magically on the tranquil waters of Lake Pichola."},{"name":"Aura Falaknuma","location":"Hyderabad","image":"/images/presidential_villa_1778416375029.png","desc":"The former residence of the Nizam, elevated 2,000 feet above the city with horse-drawn carriage arrivals."},{"name":"Umaid Bhawan","location":"Jodhpur","image":"/images/hotel_lobby_grand_1778416389976.png","desc":"Perched high above the desert capital, one of the world's largest private residences."}].map((item: any, idx: number) => (
               <div key={idx} className={styles.card}>
                 <div className={styles.cardImgWrap}>
                   <Image
@@ -125,7 +125,7 @@ export default function PalaceHotelsPage() {
         <div className={styles.ctaOverlay} />
         <div className={styles.ctaContent}>
           <h2 className={styles.ctaTitle}>Ready to Experience Aura?</h2>
-          <p className={styles.ctaDesc}>Join Aura Circle for exclusive rates, or book your next extraordinary escape today.</p>
+          <p className={styles.ctaDesc}>Join Majesty Circle for exclusive rates, or book your next extraordinary escape today.</p>
           <Link href="/book" className={styles.ctaBtn}>
             Book Now
           </Link>

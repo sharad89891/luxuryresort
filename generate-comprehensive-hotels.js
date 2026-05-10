@@ -10,7 +10,7 @@ const hotelsData = [
     introDesc: 'Step into a world of unhurried luxury. Our authentic palace hotels are living monuments, meticulously restored to offer a glimpse into the opulent lifestyle of India\'s erstwhile royalty. From the moment you arrive in a vintage horse-drawn carriage to the royal baths drawn by your personal butler, every second is steeped in majesty.',
     featured: [
       {
-        name: 'The Aura Mahal Palace',
+        name: 'The Majesty Palace',
         location: 'Mumbai',
         desc: 'The crown jewel of our collection. Built in 1903, this iconic palace stands majestically on the Mumbai harbour. Featuring iconic floating staircases, Florentine domes, and legendary sea views, it has played host to kings, presidents, and legends for over a century.',
         image: '/images/hotel_lobby_grand_1778416389976.png',
@@ -25,7 +25,7 @@ const hotelsData = [
       }
     ],
     grid: [
-      { name: 'Aura Lake Palace', location: 'Udaipur', image: '/images/infinity_pool_view_1778416175800.png', desc: 'An ethereal white marble palace that floats magically on the tranquil waters of Lake Pichola.' },
+      { name: 'Majesty Lake Palace', location: 'Udaipur', image: '/images/infinity_pool_view_1778416175800.png', desc: 'An ethereal white marble palace that floats magically on the tranquil waters of Lake Pichola.' },
       { name: 'Aura Falaknuma', location: 'Hyderabad', image: '/images/presidential_villa_1778416375029.png', desc: 'The former residence of the Nizam, elevated 2,000 feet above the city with horse-drawn carriage arrivals.' },
       { name: 'Umaid Bhawan', location: 'Jodhpur', image: '/images/hotel_lobby_grand_1778416389976.png', desc: 'Perched high above the desert capital, one of the world\'s largest private residences.' }
     ],
@@ -44,7 +44,7 @@ const hotelsData = [
     introDesc: 'Wake up to the gentle lullaby of ocean waves. Our beachfront resorts are sanctuaries of coastal luxury, offering private beaches, world-class water sports, and endless horizons. Designed to blend seamlessly with nature, they offer the ultimate tropical escape.',
     featured: [
       {
-        name: 'Aura Exotica Resort',
+        name: 'Majesty Exotica Resort',
         location: 'Goa',
         desc: 'Spread across 56 acres of lush gardens along Benaulim Beach, this Mediterranean-inspired resort offers an oasis of tranquility. Featuring private pool villas, an award-winning spa, and unparalleled coastal dining.',
         image: '/images/beach_resort_view_1778416217181.png',
@@ -112,7 +112,7 @@ const hotelsData = [
     introDesc: 'Located in the beating heart of global metropolises, our city hotels are tranquil havens designed for the modern luxury traveller. Offering seamless connectivity, award-winning dining, and unparalleled service, they are the perfect base for business or leisure.',
     featured: [
       {
-        name: 'Aura Palace',
+        name: 'Majesty Palace',
         location: 'New Delhi',
         desc: 'Set in six acres of lush gardens in the heart of India\'s diplomatic enclave. The hotel is a legendary destination known for hosting heads of state, featuring the capital\'s finest dining and the expansive J Wellness Circle.',
         image: '/images/presidential_villa_1778416375029.png',
@@ -261,7 +261,7 @@ import Link from 'next/link';
 import styles from './page.module.css';
 
 export const metadata: Metadata = {
-  title: '${page.title} | Aura Hotels',
+  title: '${page.title} | Majesty Hotels',
   description: '${page.introDesc.replace(/'/g, "&apos;")}',
 };
 
@@ -382,7 +382,7 @@ export default function ${page.title.replace(/[^a-zA-Z]/g, '')}Page() {
         <div className={styles.ctaOverlay} />
         <div className={styles.ctaContent}>
           <h2 className={styles.ctaTitle}>Ready to Experience Aura?</h2>
-          <p className={styles.ctaDesc}>Join Aura Circle for exclusive rates, or book your next extraordinary escape today.</p>
+          <p className={styles.ctaDesc}>Join Majesty Circle for exclusive rates, or book your next extraordinary escape today.</p>
           <Link href="/book" className={styles.ctaBtn}>
             Book Now
           </Link>

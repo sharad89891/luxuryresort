@@ -28,7 +28,7 @@ export default function OffersPage() {
       {/* Intro Section */}
       <section className={styles.introSection}>
         <div className={styles.container}>
-          <p className={styles.introText}>Discover a curated collection of offers designed to elevate your stay at Aura Hotels. From seasonal retreats to bespoke dining experiences, explore the perfect package for your next journey.</p>
+          <p className={styles.introText}>Discover a curated collection of offers designed to elevate your stay at Majesty Hotels. From seasonal retreats to bespoke dining experiences, explore the perfect package for your next journey.</p>
         </div>
       </section>
 
@@ -40,7 +40,7 @@ export default function OffersPage() {
             <div className={styles.contentCard}>
               <h2 className={styles.cardTitle}>Timeless Luxury</h2>
               <div className={styles.goldLineSmall} />
-              <p className={styles.cardDesc}>At Aura Hotels, we believe every stay should be extraordinary. Our exclusive offers are designed to provide you with the finest experiences, whether you are planning a family holiday, a romantic getaway, or a business trip. Immerse yourself in our world of soulful luxury.</p>
+              <p className={styles.cardDesc}>At Majesty Hotels, we believe every stay should be extraordinary. Our exclusive offers are designed to provide you with the finest experiences, whether you are planning a family holiday, a romantic getaway, or a business trip. Immerse yourself in our world of soulful luxury.</p>
             </div>
             
             {/* Section 2 */}

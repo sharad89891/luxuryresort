@@ -10,6 +10,7 @@ const slides = [
     image: '/images/hero_palace_hotel_1778416060429.png',
     eyebrow: 'Iconic Landmark Since 1903',
     title: 'The Majesty Palace',
+    logo: '/images/the_majesty_palace_logo.png',
     subtitle: 'Mumbai',
     description: 'Where history meets unparalleled luxury on the shores of the Arabian Sea',
     ctaPrimary: { label: 'Explore', href: '/hotels/the-majesty-palace' },
@@ -29,7 +30,7 @@ const slides = [
     id: 'slide-beach',
     image: '/images/beach_resort_view_1778416217181.png',
     eyebrow: 'Coastal Paradise',
-    title: 'Aura Exotica Resort & Spa',
+    title: 'Majesty Exotica Resort & Spa',
     subtitle: 'Goa',
     description: 'Nestled between lush groves and pristine beaches on the Goan coastline',
     ctaPrimary: { label: 'Explore', href: '/hotels/aura-exotica-goa' },
@@ -83,7 +84,14 @@ export default function Hero() {
         <div className={styles.heroText}>
           <span className={styles.eyebrow}>{slide.eyebrow}</span>
           <div className={styles.goldLine} />
-          <h1 className={styles.heroTitle}>{slide.title}</h1>
+          <div className={styles.titleWrapper}>
+            {slide.logo && (
+              <div className={styles.palaceLogo}>
+                <Image src={slide.logo} alt="Palace Logo" width={40} height={40} />
+              </div>
+            )}
+            <h1 className={styles.heroTitle}>{slide.title}</h1>
+          </div>
           <p className={styles.heroLocation}>{slide.subtitle}</p>
           <p className={styles.heroDesc}>{slide.description}</p>
           <div className={styles.heroCta}>

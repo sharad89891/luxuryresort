@@ -35,12 +35,12 @@ const pages = [
   { path: 'offers/early-bird', title: 'Early Bird', image: '/images/special_offers_banner_1778416333572.png', desc: 'Plan ahead and enjoy significant savings on your reservations.' },
   
   // Also generating Innercircle and other missing pages referenced in footer/nav just in case
-  { path: 'innercircle', title: 'Aura Circle', image: '/images/presidential_villa_1778416375029.png', desc: 'Join our exclusive loyalty programme and unlock a world of privileges.' },
-  { path: 'book', title: 'Book Your Stay', image: '/images/hero_palace_hotel_1778416060429.png', desc: 'Reserve your next unforgettable experience with Aura Hotels.' },
+  { path: 'innercircle', title: 'Majesty Circle', image: '/images/presidential_villa_1778416375029.png', desc: 'Join our exclusive loyalty programme and unlock a world of privileges.' },
+  { path: 'book', title: 'Book Your Stay', image: '/images/hero_palace_hotel_1778416060429.png', desc: 'Reserve your next unforgettable experience with Majesty Hotels.' },
   { path: 'about', title: 'Our Story', image: '/images/heritage_palace_exterior_1778416158734.png', desc: 'Discover the legacy of soulful luxury since 1903.' },
   { path: 'sustainability', title: 'Sustainability', image: '/images/cultural_experiences_1778416250752.png', desc: 'Our commitment to the environment and local communities.' },
   { path: 'careers', title: 'Careers', image: '/images/hotel_lobby_grand_1778416389976.png', desc: 'Join the team that defines world-class hospitality.' },
-  { path: 'press', title: 'Press Room', image: '/images/presidential_villa_1778416375029.png', desc: 'Latest news and media updates from Aura Hotels.' },
+  { path: 'press', title: 'Press Room', image: '/images/presidential_villa_1778416375029.png', desc: 'Latest news and media updates from Majesty Hotels.' },
 ];
 
 const cssContent = `
@@ -89,7 +89,7 @@ import Link from 'next/link';
 import styles from './page.module.css';
 
 export const metadata: Metadata = {
-  title: '${page.title} | Aura Hotels',
+  title: '${page.title} | Majesty Hotels',
   description: '${page.desc}',
 };
 

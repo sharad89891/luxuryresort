@@ -4,7 +4,7 @@ import Link from 'next/link';
 import styles from './page.module.css';
 
 export const metadata: Metadata = {
-  title: 'Gift Cards | Aura Hotels',
+  title: 'Gift Cards | Majesty Hotels',
   description: 'Give the gift of Aura luxury. Purchase Aura gift cards for stays, dining, spa treatments, and more.',
 };
 
@@ -44,7 +44,7 @@ export default function GiftingPage() {
             ].map((gc) => (
               <div key={gc.id} className={styles.card} id={gc.id}>
                 <div className={styles.cardTop}>
-                  <span className={styles.logoSmall}>AURA</span>
+                  <span className={styles.logoSmall}>MAJESTY</span>
                   <span className={styles.logoSubSmall}>GIFT CARD</span>
                 </div>
                 <div className={styles.cardBody}>

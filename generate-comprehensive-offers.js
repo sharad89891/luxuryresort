@@ -7,12 +7,12 @@ const offersPages = [
     cssPath: 'src/app/offers/page.module.css',
     title: 'Exclusive Offers',
     subtitle: 'Exceptional Value, Legendary Experiences',
-    description: 'Discover a curated collection of offers designed to elevate your stay at Aura Hotels. From seasonal retreats to bespoke dining experiences, explore the perfect package for your next journey.',
+    description: 'Discover a curated collection of offers designed to elevate your stay at Majesty Hotels. From seasonal retreats to bespoke dining experiences, explore the perfect package for your next journey.',
     heroImage: '/images/special_offers_banner_1778416333572.png',
     sections: [
       {
         title: 'Timeless Luxury',
-        content: 'At Aura Hotels, we believe every stay should be extraordinary. Our exclusive offers are designed to provide you with the finest experiences, whether you are planning a family holiday, a romantic getaway, or a business trip. Immerse yourself in our world of soulful luxury.'
+        content: 'At Majesty Hotels, we believe every stay should be extraordinary. Our exclusive offers are designed to provide you with the finest experiences, whether you are planning a family holiday, a romantic getaway, or a business trip. Immerse yourself in our world of soulful luxury.'
       },
       {
         title: 'Bespoke Inclusions',
@@ -76,7 +76,7 @@ const offersPages = [
     cssPath: 'src/app/offers/celebrations/page.module.css',
     title: 'Celebration Packages',
     subtitle: 'Moments to Cherish',
-    description: 'From fairytale weddings to milestone birthdays, celebrate life\'s most precious moments with the legendary hospitality of Aura Hotels. Our packages are designed to make every detail perfect.',
+    description: 'From fairytale weddings to milestone birthdays, celebrate life\'s most precious moments with the legendary hospitality of Majesty Hotels. Our packages are designed to make every detail perfect.',
     heroImage: '/images/wedding_banquet_hall_1778416202576.png',
     sections: [
       {
