@@ -1,81 +1,88 @@
-import type { Metadata } from 'next';
+'use client';
 import Image from 'next/image';
 import Link from 'next/link';
 import styles from './page.module.css';
 
-export const metadata: Metadata = {
-  title: 'Fitness | Aura Hotels',
-  description: 'Maintain your wellness routine with our state-of-the-art fitness centers, temperature-controlled pools, and personal training services available at all times.',
-};
-
-export default function FitnessPage() {
+export default function WellnessPage() {
   return (
-    <>
+    <div className={styles.pageWrapper}>
       {/* Hero Section */}
       <section className={styles.hero}>
         <div className={styles.heroBg}>
           <Image
-            src="/images/infinity_pool_view_1778416175800.png"
+            src="/images/hotel_lobby_grand_1778416389976.png"
             alt="Fitness"
             fill
             priority
             style={{ objectFit: 'cover' }}
-            sizes="100vw"
           />
-          <div className={styles.heroOverlay} />
+          <div className={styles.overlay} />
         </div>
         <div className={styles.heroContent}>
-          <span className={styles.eyebrow}>Discover</span>
-          <h1 className={styles.title}>Fitness</h1>
+          <span className={styles.eyebrow}>Active Wellbeing</span>
           <div className={styles.goldLine} />
-          <p className={styles.desc}>Experience the finest collection of fitness curated for our discerning guests.</p>
-        </div>
-      </section>
-      
-      {/* Intro Section */}
-      <section className={styles.introSection}>
-        <div className={styles.introInner}>
-          <span className={styles.introEyebrow}>Overview</span>
-          <h2 className={styles.introTitle}>Active Wellness</h2>
-          <div className={styles.goldLineCenter} />
-          <p className={styles.introText}>
-            Maintain your wellness routine with our state-of-the-art fitness centers, temperature-controlled pools, and personal training services available at all times.
-          </p>
+          <h1 className={styles.heroTitle}>Fitness</h1>
         </div>
       </section>
 
-      {/* Grid Section */}
-      <section className={styles.gridSection}>
+      {/* Intro Section */}
+      <section className={styles.introSection}>
         <div className={styles.container}>
-          <div className={styles.grid}>
-            {[{"name":"Personal Training","location":"City Hotels & Resorts","desc":"Bespoke workout regimens designed by our certified fitness experts.","price":"60 Minutes","image":"/images/hotel_lobby_grand_1778416389976.png"},{"name":"Aqua Aerobics","location":"Select Resorts","desc":"Low-impact, high-resistance workouts in our luxurious outdoor pools.","price":"45 Minutes","image":"/images/infinity_pool_view_1778416175800.png"},{"name":"Functional Fitness","location":"All Properties","desc":"24-hour access to gyms equipped with the latest cardio and strength training gear.","price":"Complimentary","image":"/images/spa_wellness_center_1778416130330.png"}].map((item, idx) => (
-              <div key={idx} className={styles.card}>
-                <div className={styles.cardImgWrap}>
-                  <Image
-                    src={item.image}
-                    alt={item.name}
-                    fill
-                    style={{ objectFit: 'cover' }}
-                    sizes="(max-width: 768px) 100vw, 33vw"
-                  />
-                  <div className={styles.cardOverlay} />
-                  <span className={styles.cardLocation}>{item.location}</span>
-                </div>
-                <div className={styles.cardBody}>
-                  <h3 className={styles.cardTitle}>{item.name}</h3>
-                  <p className={styles.cardDesc}>{item.desc}</p>
-                  <div className={styles.cardFooter}>
-                    <span className={styles.cardPrice}>{item.price}</span>
-                    <Link href="/book" className={styles.cardBtn}>
-                      Explore
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            ))}
+          <p className={styles.introText}>Maintain your fitness regime while traveling with our state-of-the-art gymnasiums and personalized training programs. Elevate your heart rate in environments designed to inspire.</p>
+        </div>
+      </section>
+
+      {/* Main Content Sections */}
+      <section className={styles.contentSection}>
+        <div className={styles.container}>
+          <div className={styles.grid2}>
+            {/* Section 1 */}
+            <div className={styles.contentCard}>
+              <h2 className={styles.cardTitle}>Modern Equipment</h2>
+              <div className={styles.goldLineSmall} />
+              <p className={styles.cardDesc}>Our fitness centers are equipped with the latest cardiovascular and strength-training technology from world-leading brands. Enjoy panoramic views as you work out in fully air-conditioned, beautifully appointed spaces.</p>
+            </div>
+            
+            {/* Section 2 */}
+            <div className={styles.contentCard}>
+              <h2 className={styles.cardTitle}>Personal Training</h2>
+              <div className={styles.goldLineSmall} />
+              <p className={styles.cardDesc}>Maximize your workout with the guidance of our certified personal trainers. They will design customized routines based on your fitness level and goals, ensuring safe and effective progress during your stay.</p>
+            </div>
           </div>
         </div>
       </section>
-    </>
+
+      {/* Features Banner */}
+      <section className={styles.featuresBanner}>
+        <div className={styles.container}>
+          <h2 className={styles.bannerTitle}>Highlights</h2>
+          <div className={styles.goldLineCenter} />
+          <div className={styles.featuresGrid}>
+                        <div className={styles.featureItem}>
+              <h3 className={styles.featureTitle}>Cardio Zone</h3>
+              <p className={styles.featureDesc}>Latest treadmills, ellipticals, and stationary bikes.</p>
+            </div>            <div className={styles.featureItem}>
+              <h3 className={styles.featureTitle}>Free Weights</h3>
+              <p className={styles.featureDesc}>Comprehensive strength training equipment.</p>
+            </div>            <div className={styles.featureItem}>
+              <h3 className={styles.featureTitle}>Aqua Aerobics</h3>
+              <p className={styles.featureDesc}>Low-impact, high-resistance workouts in the pool.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className={styles.ctaSection}>
+        <div className={styles.ctaContent}>
+          <h2 className={styles.ctaTitle}>Begin Your Wellness Journey</h2>
+          <p className={styles.ctaDesc}>Book your stay or schedule an appointment with our expert therapists.</p>
+          <div className={styles.ctaButtons}>
+            <Link href="/book" className={styles.btnPrimary}>Book Now</Link>
+          </div>
+        </div>
+      </section>
+    </div>
   );
 }

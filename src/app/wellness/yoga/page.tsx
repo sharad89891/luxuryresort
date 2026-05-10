@@ -1,81 +1,88 @@
-import type { Metadata } from 'next';
+'use client';
 import Image from 'next/image';
 import Link from 'next/link';
 import styles from './page.module.css';
 
-export const metadata: Metadata = {
-  title: 'Yoga & Meditation | Aura Hotels',
-  description: 'Find stillness and flexibility through the ancient discipline of Yoga. Our expert practitioners guide you through asanas, pranayama, and meditation tailored to your level.',
-};
-
-export default function YogaMeditationPage() {
+export default function WellnessPage() {
   return (
-    <>
+    <div className={styles.pageWrapper}>
       {/* Hero Section */}
       <section className={styles.hero}>
         <div className={styles.heroBg}>
           <Image
-            src="/images/spa_wellness_center_1778416130330.png"
+            src="/images/infinity_pool_view_1778416175800.png"
             alt="Yoga & Meditation"
             fill
             priority
             style={{ objectFit: 'cover' }}
-            sizes="100vw"
           />
-          <div className={styles.heroOverlay} />
+          <div className={styles.overlay} />
         </div>
         <div className={styles.heroContent}>
-          <span className={styles.eyebrow}>Discover</span>
-          <h1 className={styles.title}>Yoga & Meditation</h1>
+          <span className={styles.eyebrow}>Harmony of Mind and Body</span>
           <div className={styles.goldLine} />
-          <p className={styles.desc}>Experience the finest collection of yoga & meditation curated for our discerning guests.</p>
-        </div>
-      </section>
-      
-      {/* Intro Section */}
-      <section className={styles.introSection}>
-        <div className={styles.introInner}>
-          <span className={styles.introEyebrow}>Overview</span>
-          <h2 className={styles.introTitle}>Inner Peace</h2>
-          <div className={styles.goldLineCenter} />
-          <p className={styles.introText}>
-            Find stillness and flexibility through the ancient discipline of Yoga. Our expert practitioners guide you through asanas, pranayama, and meditation tailored to your level.
-          </p>
+          <h1 className={styles.heroTitle}>Yoga & Meditation</h1>
         </div>
       </section>
 
-      {/* Grid Section */}
-      <section className={styles.gridSection}>
+      {/* Intro Section */}
+      <section className={styles.introSection}>
         <div className={styles.container}>
-          <div className={styles.grid}>
-            {[{"name":"Sunrise Asanas","location":"Beach & Mountain Resorts","desc":"Invigorating morning yoga sessions surrounded by breathtaking natural beauty.","price":"Complimentary","image":"/images/infinity_pool_view_1778416175800.png"},{"name":"Mindfulness Meditation","location":"All Properties","desc":"Guided sessions to reduce stress, improve focus, and cultivate inner calm.","price":"60 Minutes","image":"/images/spa_wellness_center_1778416130330.png"},{"name":"Private Instruction","location":"All Properties","desc":"One-on-one sessions addressing specific physical or mental wellness goals.","price":"90 Minutes","image":"/images/cultural_experiences_1778416250752.png"}].map((item, idx) => (
-              <div key={idx} className={styles.card}>
-                <div className={styles.cardImgWrap}>
-                  <Image
-                    src={item.image}
-                    alt={item.name}
-                    fill
-                    style={{ objectFit: 'cover' }}
-                    sizes="(max-width: 768px) 100vw, 33vw"
-                  />
-                  <div className={styles.cardOverlay} />
-                  <span className={styles.cardLocation}>{item.location}</span>
-                </div>
-                <div className={styles.cardBody}>
-                  <h3 className={styles.cardTitle}>{item.name}</h3>
-                  <p className={styles.cardDesc}>{item.desc}</p>
-                  <div className={styles.cardFooter}>
-                    <span className={styles.cardPrice}>{item.price}</span>
-                    <Link href="/book" className={styles.cardBtn}>
-                      Explore
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            ))}
+          <p className={styles.introText}>Reconnect with your inner self through the ancient practice of Yoga. Set amidst serene surroundings, our sessions guide you towards physical strength, mental clarity, and spiritual peace.</p>
+        </div>
+      </section>
+
+      {/* Main Content Sections */}
+      <section className={styles.contentSection}>
+        <div className={styles.container}>
+          <div className={styles.grid2}>
+            {/* Section 1 */}
+            <div className={styles.contentCard}>
+              <h2 className={styles.cardTitle}>Guided Practices</h2>
+              <div className={styles.goldLineSmall} />
+              <p className={styles.cardDesc}>Whether you are a beginner or an advanced practitioner, our expert Yoga instructors offer personalized guidance. Choose from Hatha, Vinyasa, or restorative Yoga styles, tailored to your flexibility and goals.</p>
+            </div>
+            
+            {/* Section 2 */}
+            <div className={styles.contentCard}>
+              <h2 className={styles.cardTitle}>Mindfulness & Meditation</h2>
+              <div className={styles.goldLineSmall} />
+              <p className={styles.cardDesc}>Calm the relentless chatter of the mind with our specialized meditation and Pranayama (breathwork) sessions. Learn techniques to manage stress, improve focus, and cultivate a deep sense of inner stillness.</p>
+            </div>
           </div>
         </div>
       </section>
-    </>
+
+      {/* Features Banner */}
+      <section className={styles.featuresBanner}>
+        <div className={styles.container}>
+          <h2 className={styles.bannerTitle}>Highlights</h2>
+          <div className={styles.goldLineCenter} />
+          <div className={styles.featuresGrid}>
+                        <div className={styles.featureItem}>
+              <h3 className={styles.featureTitle}>Sunrise Yoga</h3>
+              <p className={styles.featureDesc}>Start your day with energizing asanas at dawn.</p>
+            </div>            <div className={styles.featureItem}>
+              <h3 className={styles.featureTitle}>Pranayama</h3>
+              <p className={styles.featureDesc}>Master the art of conscious breathing.</p>
+            </div>            <div className={styles.featureItem}>
+              <h3 className={styles.featureTitle}>Sound Bath Healing</h3>
+              <p className={styles.featureDesc}>Deep relaxation through acoustic vibrations.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className={styles.ctaSection}>
+        <div className={styles.ctaContent}>
+          <h2 className={styles.ctaTitle}>Begin Your Wellness Journey</h2>
+          <p className={styles.ctaDesc}>Book your stay or schedule an appointment with our expert therapists.</p>
+          <div className={styles.ctaButtons}>
+            <Link href="/book" className={styles.btnPrimary}>Book Now</Link>
+          </div>
+        </div>
+      </section>
+    </div>
   );
 }

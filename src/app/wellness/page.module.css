@@ -1,158 +1,224 @@
+.pageWrapper {
+  background: #FAF6F0;
+  min-height: 100vh;
+}
+
 .hero {
-  position: relative; height: 65vh; min-height: 520px;
-  display: flex; align-items: flex-end; padding-bottom: 80px; overflow: hidden;
+  position: relative;
+  height: 70vh;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
-.heroBg { position: absolute; inset: 0; }
-.heroOverlay {
-  position: absolute; inset: 0;
-  background: linear-gradient(to top, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.2) 60%, rgba(0,0,0,0.3) 100%);
+
+.heroBg {
+  position: absolute;
+  inset: 0;
 }
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.6));
+}
+
 .heroContent {
-  position: relative; z-index: 2;
-  max-width: 1400px; margin: 0 auto; padding: 0 80px; width: 100%;
+  position: relative;
+  z-index: 2;
+  padding: 0 24px;
+  max-width: 800px;
 }
+
 .eyebrow {
-  display: block; font-family: 'Montserrat', sans-serif; font-size: 11px;
-  font-weight: 600; letter-spacing: 3px; text-transform: uppercase; color: #C9A96E; margin-bottom: 8px;
+  display: block;
+  color: #C9A96E;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
 }
+
+.goldLine {
+  width: 60px;
+  height: 1px;
+  background: #8E744B;
+  margin: 0 auto 24px;
+}
+
 .heroTitle {
+  color: white;
   font-family: 'Cormorant Garamond', serif;
-  font-size: clamp(40px, 6vw, 72px); font-weight: 400; color: white;
+  font-size: clamp(40px, 6vw, 72px);
+  font-weight: 400;
+  line-height: 1.1;
+  text-shadow: 0 4px 20px rgba(0,0,0,0.3);
 }
-.goldLine { width: 50px; height: 1px; background: #8E744B; margin: 16px 0; }
-.heroDesc {
-  font-family: 'Montserrat', sans-serif; font-size: 14px; font-weight: 300;
-  color: rgba(255,255,255,0.8); line-height: 1.7; max-width: 480px; margin-bottom: 28px;
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 24px;
 }
-.heroBtn {
-  display: inline-block; background: #8E744B; color: white;
-  font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 600;
-  letter-spacing: 2px; text-transform: uppercase; padding: 14px 36px;
-  border: 1px solid #8E744B; transition: all 0.3s ease;
+
+.introSection {
+  padding: 100px 0 60px;
+  text-align: center;
 }
-.heroBtn:hover { background: #6B5535; }
-/* Philosophy */
-.philosophy { padding: 80px 0; background: #FAF6F0; }
-.container { max-width: 1400px; margin: 0 auto; padding: 0 40px; }
-.philoContent { max-width: 700px; margin-bottom: 60px; }
-.eyebrowDark {
-  display: block; font-family: 'Montserrat', sans-serif; font-size: 11px;
-  font-weight: 600; letter-spacing: 3px; text-transform: uppercase; color: #8E744B; margin-bottom: 8px;
+
+.introText {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(24px, 3vw, 36px);
+  color: #1A1A1A;
+  max-width: 900px;
+  margin: 0 auto;
+  line-height: 1.4;
 }
-.philoTitle {
-  font-family: 'Cormorant Garamond', serif; font-size: clamp(28px, 3.5vw, 44px);
-  font-weight: 400; color: #1A1A1A;
+
+.contentSection {
+  padding: 40px 0 100px;
 }
-.goldLineDark { width: 50px; height: 1px; background: #8E744B; margin: 16px 0; }
-.philoDesc {
-  font-family: 'Montserrat', sans-serif; font-size: 13px; font-weight: 300;
-  color: #4A4A4A; line-height: 1.8;
+
+.grid2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
 }
-.pillars { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
-.pillar { background: white; padding: 32px 24px; border: 1px solid #F0E8D8; }
-.pillarIcon { font-size: 28px; display: block; margin-bottom: 14px; }
-.pillarTitle {
-  font-family: 'Cormorant Garamond', serif; font-size: 20px;
-  font-weight: 500; color: #1A1A1A; margin-bottom: 8px;
+
+.contentCard {
+  background: white;
+  padding: 60px 40px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.05);
+  transition: transform 0.4s ease;
 }
-.pillarDesc {
-  font-family: 'Montserrat', sans-serif; font-size: 12px; font-weight: 300;
-  color: #4A4A4A; line-height: 1.6;
+
+.contentCard:hover {
+  transform: translateY(-5px);
 }
-/* Treatments */
-.treatments { padding: 80px 0; background: white; }
-.sectionHeader { margin-bottom: 48px; }
-.sectionTitle {
-  font-family: 'Cormorant Garamond', serif; font-size: clamp(32px, 4vw, 48px);
-  font-weight: 400; color: #1A1A1A; margin: 8px 0 0;
+
+.cardTitle {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 32px;
+  color: #1A1A1A;
+  margin-bottom: 20px;
 }
-.treatGrid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
-.treatCard {
-  background: white; border: 1px solid #F0E8D8;
-  overflow: hidden; box-shadow: 0 2px 16px rgba(0,0,0,0.05);
-  transition: all 0.4s ease;
+
+.goldLineSmall {
+  width: 40px;
+  height: 1px;
+  background: #8E744B;
+  margin-bottom: 24px;
 }
-.treatCard:hover { transform: translateY(-5px); box-shadow: 0 16px 48px rgba(0,0,0,0.1); }
-.treatImage { position: relative; height: 280px; overflow: hidden; }
-.treatImage :global(img) { transition: transform 0.7s ease; }
-.treatCard:hover .treatImage :global(img) { transform: scale(1.05); }
-.treatOverlay {
-  position: absolute; inset: 0;
-  background: linear-gradient(to top, rgba(0,0,0,0.25) 0%, transparent 60%);
+
+.cardDesc {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  line-height: 1.8;
+  color: #4A4A4A;
 }
-.treatCategory {
-  position: absolute; top: 16px; left: 16px; z-index: 1;
-  background: rgba(142,116,75,0.9); color: white;
-  font-family: 'Montserrat', sans-serif; font-size: 9px; font-weight: 700;
-  letter-spacing: 2px; text-transform: uppercase; padding: 5px 12px;
+
+.featuresBanner {
+  background: #1A1A1A;
+  padding: 100px 0;
+  color: white;
+  text-align: center;
 }
-.treatBody { padding: 28px; }
-.treatMeta { margin-bottom: 8px; }
-.treatDuration {
-  font-family: 'Montserrat', sans-serif; font-size: 11px; color: #888;
+
+.bannerTitle {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 48px;
+  margin-bottom: 24px;
 }
-.treatName {
-  font-family: 'Cormorant Garamond', serif; font-size: 22px;
-  font-weight: 500; color: #1A1A1A; margin-bottom: 10px;
+
+.goldLineCenter {
+  width: 60px;
+  height: 1px;
+  background: #8E744B;
+  margin: 0 auto 60px;
 }
-.treatDesc {
-  font-family: 'Montserrat', sans-serif; font-size: 12px; font-weight: 300;
-  color: #4A4A4A; line-height: 1.7; margin-bottom: 20px;
+
+.featuresGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
 }
-.treatBtn {
-  display: inline-block; background: #8E744B; color: white;
-  font-family: 'Montserrat', sans-serif; font-size: 10px; font-weight: 700;
-  letter-spacing: 2px; text-transform: uppercase; padding: 12px 28px;
-  transition: background 0.3s ease;
+
+.featureItem {
+  padding: 0 20px;
 }
-.treatBtn:hover { background: #6B5535; }
-/* Ayurveda Banner */
-.ayurvedaBanner {
-  display: grid; grid-template-columns: 1fr 1fr; min-height: 500px;
+
+.featureTitle {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #C9A96E;
+  margin-bottom: 16px;
 }
-.ayurvedaImage { position: relative; overflow: hidden; }
-.ayurvedaImage :global(img) { transition: transform 0.8s ease; }
-.ayurvedaBanner:hover .ayurvedaImage :global(img) { transform: scale(1.04); }
-.ayurvedaContent {
-  background: #1A1A1A; padding: 80px 70px;
-  display: flex; flex-direction: column; justify-content: center;
+
+.featureDesc {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: rgba(255,255,255,0.7);
 }
-.eyebrowLight {
-  display: block; font-family: 'Montserrat', sans-serif; font-size: 11px;
-  font-weight: 600; letter-spacing: 3px; text-transform: uppercase; color: #8E744B; margin-bottom: 8px;
+
+.ctaSection {
+  padding: 120px 24px;
+  background: #FAF6F0;
+  text-align: center;
 }
-.ayurvedaTitle {
-  font-family: 'Cormorant Garamond', serif; font-size: clamp(28px, 3.5vw, 44px);
-  font-weight: 400; color: white;
+
+.ctaTitle {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 48px;
+  color: #1A1A1A;
+  margin-bottom: 16px;
 }
-.goldLineLight { width: 50px; height: 1px; background: #8E744B; margin: 16px 0; }
-.ayurvedaDesc {
-  font-family: 'Montserrat', sans-serif; font-size: 13px; font-weight: 300;
-  color: rgba(255,255,255,0.7); line-height: 1.8; margin-bottom: 32px;
+
+.ctaDesc {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  color: #4A4A4A;
+  margin-bottom: 40px;
 }
-.ayurvedaBtn {
-  display: inline-block; background: transparent; color: #C9A96E;
-  font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 600;
-  letter-spacing: 2px; text-transform: uppercase; padding: 14px 36px;
-  border: 1px solid rgba(142,116,75,0.6); align-self: flex-start;
+
+.btnPrimary {
+  display: inline-block;
+  background: #8E744B;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 16px 40px;
+  border: 1px solid #8E744B;
   transition: all 0.3s ease;
 }
-.ayurvedaBtn:hover { background: #8E744B; color: white; border-color: #8E744B; }
-/* Responsive */
-@media (max-width: 1100px) {
-  .pillars { grid-template-columns: repeat(2, 1fr); }
-  .treatGrid { grid-template-columns: repeat(2, 1fr); }
+
+.btnPrimary:hover {
+  background: #6B5535;
+  border-color: #6B5535;
 }
+
+@media (max-width: 900px) {
+  .grid2 {
+    grid-template-columns: 1fr;
+  }
+  .featuresGrid {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+}
+
 @media (max-width: 768px) {
-  .heroContent { padding: 0 24px; }
-  .container { padding: 0 16px; }
-  .pillars { grid-template-columns: 1fr; }
-  .treatGrid { grid-template-columns: 1fr; }
-  .ayurvedaBanner { grid-template-columns: 1fr; }
-  .ayurvedaImage { height: 350px; }
-  .ayurvedaContent { padding: 60px 24px; }
-}
-@media (max-width: 480px) {
-  .heroContent { padding: 0 16px; }
-  .ayurvedaContent { padding: 48px 16px; }
+  .introSection { padding: 80px 0 40px; }
+  .contentCard { padding: 40px 24px; }
+  .featuresBanner { padding: 80px 0; }
+  .ctaSection { padding: 80px 24px; }
 }

@@ -1,16 +1,11 @@
-import type { Metadata } from 'next';
+'use client';
 import Image from 'next/image';
 import Link from 'next/link';
 import styles from './page.module.css';
 
-export const metadata: Metadata = {
-  title: 'Spa Treatments | Aura Hotels',
-  description: 'Indulge in luxurious spa therapies that blend the best of Eastern wisdom and Western techniques. We use premium botanical ingredients to soothe, nourish, and revitalize.',
-};
-
-export default function SpaTreatmentsPage() {
+export default function WellnessPage() {
   return (
-    <>
+    <div className={styles.pageWrapper}>
       {/* Hero Section */}
       <section className={styles.hero}>
         <div className={styles.heroBg}>
@@ -20,62 +15,74 @@ export default function SpaTreatmentsPage() {
             fill
             priority
             style={{ objectFit: 'cover' }}
-            sizes="100vw"
           />
-          <div className={styles.heroOverlay} />
+          <div className={styles.overlay} />
         </div>
         <div className={styles.heroContent}>
-          <span className={styles.eyebrow}>Discover</span>
-          <h1 className={styles.title}>Spa Treatments</h1>
+          <span className={styles.eyebrow}>Indulgent Relaxation</span>
           <div className={styles.goldLine} />
-          <p className={styles.desc}>Experience the finest collection of spa treatments curated for our discerning guests.</p>
-        </div>
-      </section>
-      
-      {/* Intro Section */}
-      <section className={styles.introSection}>
-        <div className={styles.introInner}>
-          <span className={styles.introEyebrow}>Overview</span>
-          <h2 className={styles.introTitle}>Ultimate Relaxation</h2>
-          <div className={styles.goldLineCenter} />
-          <p className={styles.introText}>
-            Indulge in luxurious spa therapies that blend the best of Eastern wisdom and Western techniques. We use premium botanical ingredients to soothe, nourish, and revitalize.
-          </p>
+          <h1 className={styles.heroTitle}>Spa Treatments</h1>
         </div>
       </section>
 
-      {/* Grid Section */}
-      <section className={styles.gridSection}>
+      {/* Intro Section */}
+      <section className={styles.introSection}>
         <div className={styles.container}>
-          <div className={styles.grid}>
-            {[{"name":"Signature J Wellness","location":"All Spas","desc":"Our flagship massage combining multiple techniques to release deep muscular tension.","price":"120 Minutes","image":"/images/spa_wellness_center_1778416130330.png"},{"name":"Indian Aromatherapy","location":"All Spas","desc":"Gentle, flowing strokes using pure essential oils of jasmine, rose, and sandalwood.","price":"90 Minutes","image":"/images/ayurveda_spa_treatment_1778416350069.png"},{"name":"Couples Retreat","location":"All Spas","desc":"A shared journey of relaxation in our luxurious private couples' suites.","price":"120 Minutes","image":"/images/luxury_suite_interior_1778416076439.png"}].map((item, idx) => (
-              <div key={idx} className={styles.card}>
-                <div className={styles.cardImgWrap}>
-                  <Image
-                    src={item.image}
-                    alt={item.name}
-                    fill
-                    style={{ objectFit: 'cover' }}
-                    sizes="(max-width: 768px) 100vw, 33vw"
-                  />
-                  <div className={styles.cardOverlay} />
-                  <span className={styles.cardLocation}>{item.location}</span>
-                </div>
-                <div className={styles.cardBody}>
-                  <h3 className={styles.cardTitle}>{item.name}</h3>
-                  <p className={styles.cardDesc}>{item.desc}</p>
-                  <div className={styles.cardFooter}>
-                    <span className={styles.cardPrice}>{item.price}</span>
-                    <Link href="/book" className={styles.cardBtn}>
-                      Explore
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            ))}
+          <p className={styles.introText}>Surrender to the healing touch of our expert therapists. Our spa menu features a fusion of traditional Indian therapies and contemporary wellness techniques, using exclusive natural formulations.</p>
+        </div>
+      </section>
+
+      {/* Main Content Sections */}
+      <section className={styles.contentSection}>
+        <div className={styles.container}>
+          <div className={styles.grid2}>
+            {/* Section 1 */}
+            <div className={styles.contentCard}>
+              <h2 className={styles.cardTitle}>Bespoke Therapies</h2>
+              <div className={styles.goldLineSmall} />
+              <p className={styles.cardDesc}>Our therapies are crafted to address your specific needs, whether you seek deep tissue relief, intense hydration, or pure relaxation. We use only the finest natural ingredients, including pure essential oils, exotic herbs, and mineral-rich clays.</p>
+            </div>
+            
+            {/* Section 2 */}
+            <div className={styles.contentCard}>
+              <h2 className={styles.cardTitle}>Couples Retreat</h2>
+              <div className={styles.goldLineSmall} />
+              <p className={styles.cardDesc}>Share a journey of relaxation with your loved one in our exquisite couples suites. Enjoy side-by-side massages, private soaking tubs, and dedicated relaxation spaces designed for intimate tranquility.</p>
+            </div>
           </div>
         </div>
       </section>
-    </>
+
+      {/* Features Banner */}
+      <section className={styles.featuresBanner}>
+        <div className={styles.container}>
+          <h2 className={styles.bannerTitle}>Highlights</h2>
+          <div className={styles.goldLineCenter} />
+          <div className={styles.featuresGrid}>
+                        <div className={styles.featureItem}>
+              <h3 className={styles.featureTitle}>Signature Massages</h3>
+              <p className={styles.featureDesc}>Deeply relaxing therapies to melt away tension.</p>
+            </div>            <div className={styles.featureItem}>
+              <h3 className={styles.featureTitle}>Body Envelopments</h3>
+              <p className={styles.featureDesc}>Nourishing wraps for radiant, silken skin.</p>
+            </div>            <div className={styles.featureItem}>
+              <h3 className={styles.featureTitle}>Facial Rituals</h3>
+              <p className={styles.featureDesc}>Rejuvenating treatments for a luminous complexion.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className={styles.ctaSection}>
+        <div className={styles.ctaContent}>
+          <h2 className={styles.ctaTitle}>Begin Your Wellness Journey</h2>
+          <p className={styles.ctaDesc}>Book your stay or schedule an appointment with our expert therapists.</p>
+          <div className={styles.ctaButtons}>
+            <Link href="/book" className={styles.btnPrimary}>Book Now</Link>
+          </div>
+        </div>
+      </section>
+    </div>
   );
 }
