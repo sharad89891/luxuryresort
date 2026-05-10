@@ -7,7 +7,6 @@ const hotels = [
   {
     id: 'the-majesty-palace',
     name: 'The Majesty Palace',
-    logo: '/images/the_majesty_palace_logo.png',
     location: 'Mumbai',
     image: '/images/hotel_lobby_grand_1778416389976.png',
     tag: 'Icon',
@@ -75,14 +74,7 @@ export default function FeaturedHotels() {
               </div>
               <div className={styles.cardBody}>
                 <p className={styles.cardLocation}>{hotel.location}</p>
-                <div className={styles.cardHeader}>
-                  <h3 className={styles.cardName}>{hotel.name}</h3>
-                  {hotel.logo && (
-                    <div className={styles.hotelLogo}>
-                      <Image src={hotel.logo} alt="Hotel Logo" width={24} height={24} />
-                    </div>
-                  )}
-                </div>
+                <h3 className={styles.cardName}>{hotel.name}</h3>
                 <p className={styles.cardDesc}>{hotel.desc}</p>
                 <span className={styles.cardLink}>
                   Explore <span className={styles.arrow}>→</span>
