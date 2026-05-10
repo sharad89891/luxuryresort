@@ -4,11 +4,8 @@
   left: 0;
   right: 0;
   z-index: 1000;
+  background: #1A1A1A;
   transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-}
-
-.transparent {
-  background: transparent;
 }
 
 .scrolled {
@@ -385,20 +382,47 @@
 .mobileInnerCircle {
   display: block;
   text-align: center;
-  border: 1px solid rgba(142, 116, 75, 0.5);
-  color: #C9A96E;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 11px;
-  font-weight: 500;
-  letter-spacing: 2px;
-  text-transform: uppercase;
   padding: 14px 24px;
+  background: transparent;
+  color: var(--gold);
+  border: 1px solid var(--gold);
+  text-decoration: none;
+  font-size: 0.85rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-weight: 500;
   transition: all 0.3s ease;
+  margin-bottom: 20px;
 }
 
 .mobileInnerCircle:hover {
-  background: #8E744B;
+  background: var(--gold);
   color: white;
+}
+
+.mobileSocial {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border-color);
+}
+
+.mobileSocialLink {
+  color: var(--text-color);
+  opacity: 0.6;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mobileSocialLink:hover {
+  color: var(--gold);
+  opacity: 1;
+  transform: translateY(-2px);
 }
 
 /* Responsive */
